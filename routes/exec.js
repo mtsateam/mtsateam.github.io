@@ -4,9 +4,9 @@ var db = require('../database/exec_db');
 var connection = require('../database/connection')
 
 router.get('/', function(req, res, next){
-    connection.executeQuery("SELECT * FROM communication;", function(db){
-        res.send(db);
-    })
+  connection.executeQuery("SELECT * FROM communication;", function(db){
+    res.send(db);
+  })
 });
 
 router.get('/:id', function(req, res, next){
@@ -17,3 +17,4 @@ router.get('/:id', function(req, res, next){
 });
 
 module.exports = router;
+
