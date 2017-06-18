@@ -41,37 +41,26 @@ exports.insertQuery = function(query, callback) {
     });
 }
 
+exports.updateQuery = function(query, callback) {
+  var connection = new Connection(config.database);
+  connection.on('connect', function(err) {
+    if (err) {
+      console.log(err);
+      connection.close();
+    }
+    else executeUpdate(query, connection, callback);
+  });
 
-// var sqlCommand = function(command, next){
-//     // execute the sql command
-//     request = new Request(
-//         command,
-//         function(err, rowCount, rows) {
-//             if(err) console.log("error executing the command: " + command);
-//             next(database);
-//         }
-//     );
-//
-//     request.on('doneInProc', function(rowsCount, more, rows) {
-//         rows.forEach(function (columns) {
-//             var data_entry = {};
-//             columns.forEach(function (column) {
-//                 data_entry[column.metadata.colName] = column.value;
-//             });
-//             database.push(data_entry);
-//
-//         });
-//
-//     });
-//     connection.execSql(request);
-// };
-
-
+  connection.on('end', function(err) {
+    if (err) {
+      console.log(err);
+    }
+  });
+}
 
 function executeQuery(query, connection, callback) {
     request = new Request(query, function(err) {
         if (err) console.log(err);
-
         else callback(results);
         // Close the connection after executing the SQL
         connection.close();
@@ -112,6 +101,30 @@ function executeInsert(query, connection, callback) {
             }
         });
         results.push(result);
+    });
+    connection.execSql(request);
+}
+
+function executeUpdate(query, connection, callback){
+    console.log("Updating element in database ... ");
+    var results = [];
+    request = new Request(query,
+      function(err, rowCount, rows) {
+        console.log(rowCount + 'rows updated');
+        callback(results);
+
+        connection.close();
+      }
+
+    );
+    request.on('row', function(columns) {
+      var result = {};
+      columns.forEach(function(column) {
+        if (column.value !== null) {
+          result[column.metadata.colName] = column.value;
+        }
+      });
+      results.push(result);
     });
     connection.execSql(request);
 }

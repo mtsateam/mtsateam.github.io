@@ -13,12 +13,14 @@ export class ExecComponent implements OnInit {
   constructor(private execService: ExecService) { }
 
   ngOnInit() {
+    console.log("this is from the exec component")
     this.getExecList();
   }
 
   getExecList(){
     this.execService.getAllExecs().then((res) => {
       this.execs = res;
+      console.log(res);
     }), (err) => {
       console.log(err);
     }

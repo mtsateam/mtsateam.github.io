@@ -19,18 +19,18 @@ export class ExecService {
     });
   }
 
-  // showBook(id) {
-  //   return new Promise((resolve, reject) => {
-  //     this.http.get('/book/' + id)
-  //       .map(res => res.json())
-  //       .subscribe(res => {
-  //         resolve(res)
-  //       }, (err) => {
-  //         reject(err);
-  //       });
-  //   });
-  // }
-  //
+  getExecByID(id) {
+    return new Promise((resolve, reject) => {
+      this.http.get('/book/' + id)
+        .map(res => res.json())
+        .subscribe(res => {
+          resolve(res)
+        }, (err) => {
+          reject(err);
+        });
+    });
+  }
+
   // saveBook(data) {
   //   return new Promise((resolve, reject) => {
   //     this.http.post('/book', data)

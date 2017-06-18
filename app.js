@@ -3,7 +3,6 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-var Promise = require('promise');
 
 var exec = require('./routes/exec');
 var index = require('./routes/index');
@@ -14,8 +13,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 
-//use src as path to point express to angular project
-app.use(express.static(path.join(__dirname, 'src')));
+//use dist as path to point express to angular project
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/', index);
 app.use('/exec', exec);
