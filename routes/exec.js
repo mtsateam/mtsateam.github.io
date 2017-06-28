@@ -6,6 +6,7 @@ var connection = require('../database/connection')
 //Get all execs
 router.get('/', function(req, res, next){
   connection.executeQuery("SELECT * FROM communication;", function(db){
+    console.log(db);
     res.send(db);
   })
 });
