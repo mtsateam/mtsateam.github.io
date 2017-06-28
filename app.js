@@ -16,6 +16,9 @@ app.use(bodyParser.urlencoded({'extended':'false'}));
 //use dist as path to point express to angular project
 app.use(express.static(path.join(__dirname, 'dist')));
 
+//add icon
+app.use(favicon(__dirname + '/favicon.ico'));
+
 app.use('/', index);
 app.use('/exec', exec);
 
