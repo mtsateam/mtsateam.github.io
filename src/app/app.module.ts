@@ -4,40 +4,50 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu.component';
 
-//Execs
-import { ExecComponent } from './exec/exec.component';
-import { ExecService } from './exec.service';
+//children modules
 
-//Events
-import { EventComponent } from './event/event.component';
-import { CONST_ROUTING } from './app.routing';
+// import { EventsModule } from './events/events.module';
+// import { AboutUsModule } from './about-us/about-us.module';
+// import { SponsorsModule } from './sponsors/sponsors.module';
+// import { WelcomePageModule } from './welcome-page/welcome-page.module';
+// import { ExecsModule } from './execs/execs.module';
+
+
+import { EventsComponent } from './events/events.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { ExecsComponent } from './execs/execs.component';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+
 
 //to prevent error 404
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-
-//
-// const ROUTES = [
-//   { path: '', redirectTo: 'execs', pathMatch: 'full'},
-//   { path: 'execs', component: ExecComponent }
-// ]
+import { CONST_ROUTING } from './app.routing';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    ExecComponent,
-    EventComponent,
-  ],
   imports: [
     BrowserModule,
-    CONST_ROUTING,
     FormsModule,
-    HttpModule
+    HttpModule,
+    // ExecsModule,
+    // AboutUsModule,
+    // EventsModule,
+    // SponsorsModule,
+    // WelcomePageModule,
+    CONST_ROUTING,
   ],
-  providers: [ExecService,
+  declarations: [
+    AppComponent,
+    EventsComponent,
+    AboutUsComponent,
+    ExecsComponent,
+    SponsorsComponent,
+    WelcomePageComponent,
+    // CONST_ROUTING,
+  ],
+  providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent],

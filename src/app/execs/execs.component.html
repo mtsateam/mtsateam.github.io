@@ -12,7 +12,16 @@
     <tr *ngFor="let exec of execs">
       <td>{{ exec.Name }}</td>
       <td>{{ exec.Position }}</td>
-      <td>Show Detail</td>
+      <td>{{ exec.imgUrl }}</td>
+
+      <td><img
+        style="
+               border-radius: 8px;
+               max-width: 5cm;
+               height: auto;
+            "
+        src="../../assets/img/execs/Tiffany.jpg">
+      </td>
     </tr>
     </tbody>
   </table>

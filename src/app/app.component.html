@@ -1,1 +1,31 @@
-<router-outlet></router-outlet>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="nav nav-pills">
+      <li routerLinkActive="active"> <a [routerLink]="['/about-us']" >About Us</a></li>
+      <li routerLinkActive="active"> <a [routerLink]="['/welcome-page']" >Welcome Page</a></li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <app-welcome-page></app-welcome-page>
+</div>
+
+<div>
+  <app-about-us></app-about-us>
+</div>
+
+<div>
+  <app-events></app-events>
+</div>
+
+<div>
+  <app-execs></app-execs>
+</div>
+
+<div>
+  <app-sponsors></app-sponsors>
+</div>
+
+
+
