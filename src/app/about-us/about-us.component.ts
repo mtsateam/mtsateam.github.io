@@ -10,6 +10,7 @@ export class AboutUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('about-us component initiated');
   }
 
 }

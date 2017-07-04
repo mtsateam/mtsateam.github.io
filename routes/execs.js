@@ -5,7 +5,7 @@ var connection = require('../database/connection')
 
 //Get all execs
 router.get('/', function(req, res, next){
-  connection.executeQuery("SELECT * FROM communication;", function(db){
+  connection.executeQuery("SELECT * FROM Execs WHERE Name='Tiffany Wang';", function(db){
     console.log(db);
     res.send(db);
   })
@@ -15,7 +15,7 @@ router.get('/', function(req, res, next){
 //Get Exec by ID (Name)
 router.get('/:id', function(req, res, next){
     exec_id = req.params.id;
-    connection.executeQuery("SELECT * FROM communication WHERE Name='" + exec_id + "';", function(db){
+    connection.executeQuery("SELECT * FROM Communication WHERE Name='" + exec_id + "';", function(db){
         res.json(db);
     })
 });
@@ -26,7 +26,7 @@ router.get('/:id', function(req, res, next){
 router.put('/:id', function(req, res, next){
     exec_info = req.body;
     exec_id = req.params.id;
-    connection.updateQuery("UPDATE communication SET ", function(db){
+    connection.updateQuery("UPDATE Communication SET ", function(db){
       res.json(db);
     });
 
@@ -35,7 +35,7 @@ router.put('/:id', function(req, res, next){
 //delete Exec
 router.delete('/:id', function(req, res, next){
   exec_id = req.params.id;
-  connection.executeQuery("DELETE FROM communication WHERE Name='"+exec_id+"';", function(db){
+  connection.executeQuery("DELETE FROM Communication WHERE Name='"+exec_id+"';", function(db){
     res.json(db);
   })
 })

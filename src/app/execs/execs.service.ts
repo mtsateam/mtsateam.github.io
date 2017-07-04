@@ -3,13 +3,13 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class ExecService {
+export class ExecsService {
 
   constructor(private http: Http) { }
 
   getAllExecs() {
     return new Promise((resolve, reject) => {
-      this.http.get('/exec')
+      this.http.get('/execs')
         .map(res => res.json())
         .subscribe(res => {
           resolve(res);

@@ -1,19 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { ExecService } from '../exec.service'
-
+import { ExecsService } from './execs.service';
 
 @Component({
   selector: 'app-execs',
   templateUrl: './execs.component.html',
-  styleUrls: ['./execs.component.css']
+  styles: []
 })
 export class ExecsComponent implements OnInit {
 
-  exec: any;
+  execs:any ;
 
-  constructor() { }
+  // constructor(){}
+
+  constructor(private execService: ExecsService) { }
 
   ngOnInit() {
-    // this.getExecsList();
+    console.log("this is from the exec component")
+    this.getExecList();
+  }
+
+  getExecList(){
+    this.execService.getAllExecs().then((res) => {
+      this.execs = res;
+      console.log(res);
+    })
   }
 }
+
