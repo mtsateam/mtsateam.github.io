@@ -19,9 +19,33 @@ export class ExecsService {
     });
   }
 
+  getAllTeams(){
+    return new Promise((resolve, reject) => {
+      this.http.get('/execs/teams')
+        .map(res => res.json())
+        .subscribe(res => {
+          resolve(res);
+        }, (err) => {
+          reject(err);
+        });
+    });
+  }
+
   getExecByID(id) {
     return new Promise((resolve, reject) => {
-      this.http.get('/book/' + id)
+      this.http.get('/execs/' + id)
+        .map(res => res.json())
+        .subscribe(res => {
+          resolve(res)
+        }, (err) => {
+          reject(err);
+        });
+    });
+  }
+
+  getExecByTeamID(id){
+    return new Promise((resolve, reject) => {
+      this.http.get('/execs/teams/' + id)
         .map(res => res.json())
         .subscribe(res => {
           resolve(res)

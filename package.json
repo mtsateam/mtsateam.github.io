@@ -36,6 +36,8 @@
     "core-js": "^2.4.1",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "lodash.isequal": "^4.5.0",
     "morgan": "^1.8.2",
     "promise": "^7.3.0",
     "rxjs": "^5.1.0",

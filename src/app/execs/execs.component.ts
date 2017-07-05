@@ -9,6 +9,7 @@ import { ExecsService } from './execs.service';
 export class ExecsComponent implements OnInit {
 
   execs:any ;
+  teams:any ;
 
   // constructor(){}
 
@@ -22,6 +23,13 @@ export class ExecsComponent implements OnInit {
   getExecList(){
     this.execService.getAllExecs().then((res) => {
       this.execs = res;
+      console.log(res);
+    })
+  }
+
+  getTeamsList(){
+    this.execService.getAllTeams().then((res) => {
+      this.teams = res;
       console.log(res);
     })
   }
