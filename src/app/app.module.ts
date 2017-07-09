@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 
 
 //components
+import { MenuComponent } from './menu.component'
 import { EventsComponent } from './events/events.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
@@ -50,6 +51,7 @@ import { CONST_ROUTING } from './app.routing';
     CONST_ROUTING,
   ],
   declarations: [
+    MenuComponent,
     AppComponent,
     EventsComponent,
     AboutUsComponent,
