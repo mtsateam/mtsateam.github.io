@@ -5,8 +5,11 @@ var isEqual = require('lodash.isequal');
 
 //Get all execs
 router.get('/', function(req, res, next){
-  connection.executeQuery("SELECT * FROM Execs WHERE Name='Tiffany Wang';", function(db){
-    console.log(db);
+  // connection.executeQuery("SELECT * FROM Execs WHERE Position='Webmaster';", function(db){
+  //   res.send(db);
+  // })
+
+  connection.executeQuery("SELECT * FROM Execs ORDER BY Team DESC;", function(db){
     res.send(db);
   })
 });
@@ -14,20 +17,8 @@ router.get('/', function(req, res, next){
 
 //Get teams list
 router.get('/teams', function(req, res, next){
-  connection.executeQuery("SELECT Team FROM Execs", function(db){
-    var database = [];
-    database.push(db[0]);
-    db.forEach(function(new_team){
-      var i, existing_team;
-      for(i = 0; i < database.length ; i++) {
-        if(JSON.stringify(database[i]) === JSON.stringify(new_team)) {
-          existing_team = true;
-          break
-        }
-      }
-      if(!existing_team) database.push(new_team)
-    })
-    res.send(database);
+  connection.executeQuery("SELECT Team FROM Execs GROUP BY Team", function(db){
+    res.send(db);
   })
 });
 

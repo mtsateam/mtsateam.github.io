@@ -43,7 +43,7 @@ export class ExecsService {
     });
   }
 
-  getExecByTeamID(id){
+  getExecByTeamsID(id){
     return new Promise((resolve, reject) => {
       this.http.get('/execs/teams/' + id)
         .map(res => res.json())

@@ -1,20 +1,83 @@
-<div class="container">
-  <h1>Exec Catalogue</h1>
-  <table class="table">
-    <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let exec of execs" >
-      <td>{{ exec.Name }}</td>
-      <td>{{ exec.Position }}</td>
-      <td>{{ exec.imgUrl }}</td>
-      <img [attr.src]="exec.imgUrl">
-    </tr>
-    </tbody>
-  </table>
+<!--<div class="our-team">-->
+
+<!--<div class="container">-->
+<!--<table class="table">-->
+<!--<thead>-->
+<!--<tr>-->
+<!--<th>Title</th>-->
+<!--<th>Author</th>-->
+<!--<th>Action</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<!--<tbody>-->
+<!--<div class="team-member">-->
+
+<!--</div>-->
+<!--<tr *ngFor="let exec of execs" >-->
+<!--<td>{{ exec.Name }}</td>-->
+<!--<td>{{ exec.Position }}</td>-->
+<!--<td>{{ exec.imgUrl }}</td>-->
+<!--<img [attr.src]="exec.imgUrl">-->
+<!--</tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="services" id="services">-->
+<!--<div class="container" *ngFor="let team of allTeamsList">-->
+<!--{{ getTeamsID(team.Team) }}-->
+<!--<h3 class="tittle"> Execs </h3>-->
+<!--<div class="grid"  *ngFor="let exec of execs">-->
+<!--<div class="col-md-6 serve-agileinfo">-->
+<!--<figure class="effect-julia">-->
+<!--<img src="../../assets/img/execs/Tiffany3.jpg" alt="img21"/>-->
+<!--<figcaption>-->
+<!--<h4> {{exec.Name }}<span> {{exec.LastName}}</span></h4>-->
+<!--<div>-->
+<!--<p> lalala </p>-->
+<!--<p>She loves the smell of the ocean</p>-->
+<!--<p>And dives into the morning light</p>-->
+<!--</div>-->
+<!--&lt;!&ndash;<a class="scroll" href="#news">View more</a>&ndash;&gt;-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--<p class="ser-para-wthree">-->
+
+<!--{{ exec.Position }}-->
+<!--{{ exec.Major }} - {{ exec.Year }}-->
+
+<!--<p>-->
+<!--</div>-->
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="services" id="services">
+    <div class="grid">
+      <div class="col-md-6 serve-agileinfo" *ngFor="let exec of allExecs">
+        <figure class="effect-julia" style="display: inline-block !important;">
+          <img src="../../assets/img/execs/Tiffany3.jpg" alt="img21"/>
+          <figcaption>
+            <h4> {{exec.Name }}<span> {{exec.LastName}}</span></h4>
+            <div>
+              <p> First Fact </p>
+              <p> Second Fact </p>
+              <p> Third Fact </p>
+            </div>
+            <!--<a class="scroll" href="#news">View more</a>-->
+          </figcaption>
+        </figure>
+        <p class="ser-para-wthree">
+
+          {{ exec.Position }}
+          <br>
+          {{ exec.Major }} - {{ exec.Year }}
+        <p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
 </div>
+

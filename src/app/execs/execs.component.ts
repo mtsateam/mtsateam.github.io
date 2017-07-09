@@ -4,34 +4,55 @@ import { ExecsService } from './execs.service';
 @Component({
   selector: 'app-execs',
   templateUrl: './execs.component.html',
-  styles: []
+  styleUrls: [
+    './execs.component.css',
+    '../../css/bootstrap.css',
+    // '../../../css/font-awesome.css'
+  ]
 })
+
 export class ExecsComponent implements OnInit {
 
-  execs:any ;
-  teams:any ;
+  allExecs:any ;
+  allTeamsList: any;
+  execListByTeamID:any ;
 
-  // constructor(){}
-
-  constructor(private execService: ExecsService) { }
+  constructor(public execService: ExecsService) { }
 
   ngOnInit() {
-    console.log("this is from the exec component")
     this.getExecList();
+    // this.getTeamsList()
+    // this.getExecListByTeamsID();
+  }
+  getTeamsList(){
+    console.log("getTeamsLIst called")
+    this.execService.getAllTeams().then((res) => {
+      console.log("getTeamsList() output: \n" + res)
+      this.allTeamsList = res;
+    })
   }
 
   getExecList(){
     this.execService.getAllExecs().then((res) => {
-      this.execs = res;
-      console.log(res);
+      this.allExecs = res;
     })
   }
 
-  getTeamsList(){
-    this.execService.getAllTeams().then((res) => {
-      this.teams = res;
-      console.log(res);
-    })
-  }
+  // getExecListByTeamsID(){
+  //   console.log("getTeamsList called in getExecListByTeamsID")
+  //   this.execService.getAllTeams().then((res) => {
+  //     console.log("getTeamsList() output: \n" + res)
+  //     this.allTeamsList = res;
+  //
+  //   })
+  //   this.allTeamsList.forEach(function (teamID) {
+  //     this.execService.getExecByTeamsID(teamID).then((res) => {
+  //       console.log("getExecListByTeamsID() output: \n" + res);
+  //       this.execListByTeamID = res;
+  //     })
+  //   })
+  // }
+
+
 }
 
