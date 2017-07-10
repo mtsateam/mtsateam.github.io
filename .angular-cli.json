@@ -9,6 +9,9 @@
       "outDir": "dist",
       "assets": [
         "assets",
+        "js",
+        "css",
+        "fonts",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -19,9 +22,20 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./js/theme.js",
+        "./js/jquery.js",
+        "./js/jquery.easing.min.js",
+        "./js/bootstrap.min.js",
+        "./js/validate.js"
+
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -34,16 +48,6 @@
       "config": "./protractor.conf.js"
     }
   },
-
-  "styles": [
-    "styles.css",
-    "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-  ],
-  "scripts": [
-    "../node_modules/jquery/dist/jquery.min.js",
-    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-  ],
-
 
   "lint": [
     {

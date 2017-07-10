@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-welcome-page',
@@ -9,11 +9,21 @@ import { Component, OnInit } from '@angular/core';
     '../../css/font-awesome.min.css'
   ]
 })
-export class WelcomePageComponent implements OnInit {
+export class WelcomePageComponent implements AfterViewInit {
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.createTagHTML(this.elementRef, "link", "text/css", "stylesheet", "http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic");
+    this.createTagHTML(this.elementRef, "link", "text/css", "stylesheet", "http://fonts.googleapis.com/css?family=Montserrat:400,700");
   }
 
+
+  createTagHTML(elementRef, tag, type, rel, href) {
+    var s = document.createElement(tag);
+    s.type = type;
+    s.rel = rel;
+    s.href = href;
+    elementRef.nativeElement.appendChild(s);
+  }
 }
