@@ -69,10 +69,10 @@
 
 /*--OUR CLIENTS --*/
 
-/*.our-clients {*/
-  /*background: url(../images/lines-dark.png) repeat-x center;*/
-  /*margin-bottom: 40px;*/
-/*}*/
+.our-clients {
+  background: url(../../assets/img/execs/Tiffany3.jpg) repeat-x center;
+  margin-bottom: 40px;
+}
 
 .our-clients .section-footer-title {
   background: #272727;

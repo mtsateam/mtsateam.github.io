@@ -4,9 +4,7 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
   selector: 'app-welcome-page',
   templateUrl: './welcome-page.component.html',
   styleUrls: [
-    './welcome-page.component.css',
-    '../../css/bootstrap.css',
-    '../../css/font-awesome.min.css'
+    './welcome-page.component.css'
   ]
 })
 export class WelcomePageComponent implements AfterViewInit {
