@@ -20,6 +20,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ExecsComponent } from './execs/execs.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 //services
@@ -43,11 +46,7 @@ import { CONST_ROUTING } from './app.routing';
     BrowserModule,
     FormsModule,
     HttpModule,
-    // ExecsModule,
-    // AboutUsModule,
-    // EventsModule,
-    // SponsorsModule,
-    // WelcomePageModule,
+
     CONST_ROUTING,
   ],
   declarations: [
@@ -58,6 +57,8 @@ import { CONST_ROUTING } from './app.routing';
     ExecsComponent,
     SponsorsComponent,
     WelcomePageComponent,
+    ContactUsComponent,
+    FooterComponent,
   ],
   providers: [
     ExecsService,

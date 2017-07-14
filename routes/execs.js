@@ -34,7 +34,7 @@ router.get('/teams/:id', function(req, res, next){
 //Find by ID and update
 router.put('/:id', function(req, res, next){
     exec_info = req.body;
-    exec_id = req.params.id;
+    event_id = req.params.id;
     connection.updateQuery("UPDATE Communication SET ", function(db){
       res.json(db);
     });
@@ -43,16 +43,16 @@ router.put('/:id', function(req, res, next){
 
 //Get Exec by ID (Name)
 router.get('/:id', function(req, res, next){
-  exec_id = req.params.id;
-  connection.executeQuery("SELECT * FROM Execs WHERE Name='" + exec_id + "';", function(db){
+  event_id = req.params.id;
+  connection.executeQuery("SELECT * FROM Execs WHERE Name='" + event_id + "';", function(db){
     res.send(db);
   })
 });
 
 //delete Exec
 router.delete('/:id', function(req, res, next){
-  exec_id = req.params.id;
-  connection.executeQuery("DELETE FROM Communication WHERE Name='"+exec_id+"';", function(db){
+  event_id = req.params.id;
+  connection.executeQuery("DELETE FROM Communication WHERE Name='"+event_id+"';", function(db){
     res.json(db);
   })
 });
