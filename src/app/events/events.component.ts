@@ -34,8 +34,17 @@ export class EventsComponent implements OnInit {
 
   getUpcomingEvent(){
     this.eventsService.getUpcomingEvent().then((res) => {
-      this.upcomingEvent = res;
+
     })
+  }
+
+  updateModalEvent(event){
+    document.getElementById("event-title").innerHTML=event.Name;
+    document.getElementById("event-description").innerHTML=event.Description;
+    document.getElementById("event-date").innerHTML=event.EventDate;
+    document.getElementById("event-time").innerHTML=event.EventTime;
+    document.getElementById("event-location").innerHTML=event.Location;
+    document.getElementById("event-URL").setAttribute('href', event.EventURL);
   }
 
 }
