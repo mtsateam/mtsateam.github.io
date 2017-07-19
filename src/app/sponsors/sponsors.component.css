@@ -1,0 +1,27 @@
+.sponsors {
+  background: #FFF;
+  padding: 0px;
+}
+
+.sponsors h2 {
+  padding-top: 100px;
+}
+
+.sponsor .sponsor-list {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.sponsors .text {
+  color: #666;
+  line-height: 34px;
+  padding: 0;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.sponsors .discounts {
+  text-align: left;
+  table-layout: auto;
+}
