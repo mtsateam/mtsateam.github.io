@@ -5,29 +5,35 @@
 
 .carousel-inner{
   height:100%;
+
 }
 
-.item{
+.item {
+  background-position: center;
+  background-image: url("../../assets/img/execs/Tiffany2.jpg");
+  background-size: cover;
   height: 100%;
-  position:relative;
+  /*position:relative;*/
   overflow: hidden;
 }
 
-.item img{
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  margin-top: auto;
-  margin-bottom: auto;
-  vertical-align: middle;
-}
+
+
+
+
+
+/*.item img{*/
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+  /*width: 100%;*/
+
+/*}*/
 
 .carousel-caption{
   position:absolute;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-
 }
 
 
