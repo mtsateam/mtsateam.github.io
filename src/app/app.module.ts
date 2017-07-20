@@ -31,7 +31,7 @@ import { AboutUsService } from './about-us/about-us.service';
 import { EventsService } from './events/events.service';
 import { SponsorsService } from './sponsors/sponsors.service';
 import { WelcomePageService } from './welcome-page/welcome-page.service';
-
+import { NewsBannerComponent } from './news-banner/news-banner.component';
 
 
 //to prevent error 404
@@ -40,13 +40,15 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CONST_ROUTING } from './app.routing';
 
 
+//Google Map Module
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-
     CONST_ROUTING,
   ],
   declarations: [
@@ -59,6 +61,7 @@ import { CONST_ROUTING } from './app.routing';
     WelcomePageComponent,
     ContactUsComponent,
     FooterComponent,
+    NewsBannerComponent,
   ],
   providers: [
     ExecsService,
