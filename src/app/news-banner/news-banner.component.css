@@ -1,5 +1,5 @@
 #myCarousel{
-  height: 65%;
+  height: 150px;
   background-color: black;
 }
 
@@ -17,23 +17,17 @@
   overflow: hidden;
 }
 
-
-
-
-
-
-/*.item img{*/
-  /*display: inline-block;*/
-  /*vertical-align: middle;*/
-  /*width: 100%;*/
-
-/*}*/
-
 .carousel-caption{
   position:absolute;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+}
+
+@media(min-width: 768px){
+  #myCarousel{
+    height: 50%;
+  }
 }
 
 

@@ -43,3 +43,4 @@ Thumbs.db
 
 #configuration files
 configuration.js
+./client-configuration.ts
