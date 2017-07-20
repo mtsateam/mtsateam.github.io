@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var connection = require('../database/connection')
+var connection = require('../connection/database')
 
 //Get all sponsors
 router.get('/', function(req, res, next){
