@@ -2,7 +2,7 @@ var Connection = require('tedious').Connection;
 var Request = require('tedious').Request;
 var config = require('../configuration')
 
-// Create connection to database
+// Create database to database
 
 
 exports.executeQuery = function(query, callback) {
@@ -61,7 +61,7 @@ function executeQuery(query, connection, callback) {
     request = new Request(query, function(err) {
         if (err) console.log(err);
         else callback(results);
-        // Close the connection after executing the SQL
+        // Close the database after executing the SQL
         connection.close();
     });
     var results = [];
