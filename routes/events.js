@@ -12,7 +12,7 @@ router.get('/', function(req, res, next){
 //Get Most Recent Event
 //TODO change to get events after today
 router.get('/upcoming', function(req, res, next){
-  connection.executeQuery("SELECT * FROM Events WHERE CreationDate = (SELECT MAX(CreationDate) as MostRecent FROM Events;", function(db){
+  connection.executeQuery("SELECT * FROM Events WHERE CreationDate = (SELECT MAX(CreationDate) as MostRecent FROM Events);", function(db){
     res.send(db);
   })
 });
