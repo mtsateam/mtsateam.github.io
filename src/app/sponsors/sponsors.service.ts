@@ -55,39 +55,16 @@ export class SponsorsService {
     });
   }
 
-  // saveBook(data) {
-  //   return new Promise((resolve, reject) => {
-  //     this.http.post('/book', data)
-  //       .map(res => res.json())
-  //       .subscribe(res => {
-  //         resolve(res);
-  //       }, (err) => {
-  //         reject(err);
-  //       });
-  //   });
-  // }
-  //
-  // updateBook(id, data) {
-  //   return new Promise((resolve, reject) => {
-  //     this.http.put('/book/'+id, data)
-  //       .map(res => res.json())
-  //       .subscribe(res => {
-  //         resolve(res);
-  //       }, (err) => {
-  //         reject(err);
-  //       });
-  //   });
-  // }
-  //
-  // deleteBook(id) {
-  //   return new Promise((resolve, reject) => {
-  //     this.http.delete('/book/'+id)
-  //       .subscribe(res => {
-  //         resolve(res);
-  //       }, (err) => {
-  //         reject(err);
-  //       });
-  //   });
-  // }
+  getSponsorAddressID(sponsor_ID){
+    return new Promise((resolve, reject) => {
+      this.http.get('/sponsor_ID/addressID')
+        .map(res => res.json())
+        .subscribe(res => {
+          resolve(res)
+        }, (err) => {
+          reject(err);
+        });
+    })
+  }
 
 }

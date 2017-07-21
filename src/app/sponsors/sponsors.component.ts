@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-declare var googleAPIkey: any;
-declare function geocodeAddress(address, callback): void;
+import { SponsorsService } from './sponsors.service'
+
 
 @Component({
   selector: 'app-sponsors',
@@ -8,16 +8,26 @@ declare function geocodeAddress(address, callback): void;
   styleUrls: ['./sponsors.component.css']
 })
 export class SponsorsComponent implements OnInit {
-  title: any;
-  lat: any;
-  lng: any;
+  allSponsors : any;
+  sponsor_id : any;
 
+  constructor(public sponsorsService: SponsorsService){}
 
   ngOnInit() {
-    this.title = 'My first AGM project';
-    this.lat= 51.678418;
-    this.lng= 7.809007;
+
+  }
+
+  getAllSponsors(){
+    this.sponsorsService.getAllSponsors().then((res) => {
+      this.allSponsors = res;
+    })
   }
 
 
+
+  getSponsorAddressID(sponsor_ID){
+    this.sponsorsService.getSponsorAddressID(sponsor_ID).then((res) => {
+      this.sponsor_id = res;
+    })
+  }
 }
