@@ -42,7 +42,10 @@ router.get('/:id', function(req, res, next){
 children_router.get('/addressID', function(req, res, next){
   sponsor_id = req.params.id;
   database.executeQuery("SELECT Address FROM Sponsors WHERE Name='" + sponsor_id + "';", function(db){
-    res.send(db[0].Address);
+    google.addressIDCoder(db[0].Address, function(address){
+      console.log("ready")
+      res.send(address);
+    })
   })
 })
 
