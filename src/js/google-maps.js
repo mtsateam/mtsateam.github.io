@@ -1,5 +1,5 @@
 var google = require('@google/maps');
-var configuration = require('../client-configuration');
+var configuration = require('../../configuration');
 
 var googleMapsClient = google.createClient({
     key: configuration.googleAPIKey
@@ -8,17 +8,18 @@ var googleMapsClient = google.createClient({
 
 
 //use place_id instead of long/lat
-var geocodeAddress = function(address, callback) {
+var addressIDCoder = function(address) {
   googleMapsClient.geocode({
     address: address
   }, function (err, res) {
     if (!err) {
-      callback(res.json.results[0].place_id)
+      return res.json.results[0].place_id;
     }
   })
 }
 
 
-exports.googleMapsClient = googleMapsClient;
-exports.geocodeAddress=geocodeAddress;
+module.exports = addressIDCoder();
+
+
 
