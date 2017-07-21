@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SponsorsService } from './sponsors.service'
+import { AgmCoreModule } from '@agm/core';
 
 
 @Component({
@@ -10,11 +11,17 @@ import { SponsorsService } from './sponsors.service'
 export class SponsorsComponent implements OnInit {
   allSponsors : any;
   sponsor_id : any;
+  title: any ;
+  lat :any;
+  lng : any;
 
   constructor(public sponsorsService: SponsorsService){}
 
   ngOnInit() {
-
+    this.getAllSponsors();
+    this.title=  'My first AGM project';
+    this.lat = 51.678418;
+    this.lng= 7.809007;
   }
 
   getAllSponsors(){

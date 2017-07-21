@@ -50,6 +50,9 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     HttpModule,
     CONST_ROUTING,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCdW55DiWTiEPwLZZL_CL4inunzUkXg5uw'
+    })
   ],
   declarations: [
     MenuComponent,
