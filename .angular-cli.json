@@ -34,10 +34,7 @@
         "./js/jquery.vegas.min.js",
         "./js/jquery.knob.js",
         "./js/theme.js",
-        "./js/wow.min.js",
-        "./js/zerif.js",
-        "../configuration.js",
-        "../connection/google-maps.js"
+        "./js/wow.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
