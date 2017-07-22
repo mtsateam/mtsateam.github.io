@@ -8,7 +8,7 @@ var googleMapsClient = google.createClient({
 
 
 //use place_id instead of long/lat
-exports.addressIDCoder = function(address, callback) {
+var addressIDCoder = function(address, callback) {
   googleMapsClient.geocode({
     address: address
   }, function (err, res) {
@@ -17,5 +17,22 @@ exports.addressIDCoder = function(address, callback) {
     }
   })
 }
+
+var generateLocationID = function(jsonArray, callback){
+  var index = 0;
+  jsonArray.forEach(function(jsonObject){
+    addressIDCoder(jsonObject.Address, function(ID){
+      jsonObject.locationID = ID;
+      if(index == jsonArray.length - 1) {
+        callback(jsonArray);
+      }
+      index++;
+    })
+  })
+}
+
+
+exports.addressIDCoder = addressIDCoder;
+exports.generateLocationID = generateLocationID;
 
 

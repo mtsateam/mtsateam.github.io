@@ -10,24 +10,24 @@ router.use('/:id', children_router);
 //Get all sponsors
 router.get('/', function(req, response, next){
   database.executeQuery("SELECT * FROM Sponsors ORDER BY Tier;", function(db){
-    generateLocationID(db, function(sponsorList){
+    google.generateLocationID(db, function(sponsorList){
       response.send(sponsorList);
     })
   })
 });
 
-var generateLocationID = function(sponsorList, callback){
-  var index = 0;
-  sponsorList.forEach(function(sponsor){
-    google.addressIDCoder(sponsor.Address, function(ID){
-      sponsor.locationID = ID;
-      if(index == sponsorList.length - 1) {
-        callback(sponsorList);
-      }
-      index++;
-    })
-  })
-}
+// var generateLocationID = function(jsonArray, callback){
+//   var index = 0;
+//   jsonArray.forEach(function(jsonObject){
+//     google.addressIDCoder(jsonObject.Address, function(ID){
+//       jsonObject.locationID = ID;
+//       if(index == jsonArray.length - 1) {
+//         callback(jsonArray);
+//       }
+//       index++;
+//     })
+//   })
+// }
 
 //Get tier list
 router.get('/tier/:id', function(req, res, next){
