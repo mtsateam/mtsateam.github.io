@@ -1,5 +1,5 @@
 #services {
-  padding: 1.2em 0.4em;
+  padding: 0 1.2em 0.8em 0.8em ;
   background-color: #ffffff;
   max-height: 450px;
   width: 100%;
@@ -10,7 +10,6 @@
   position: relative;
   clear: both;
   margin: 0 auto;
-  padding:2em 0 0em;
   list-style: none;
   text-align: center;
   overflow-y: hidden;
@@ -20,6 +19,7 @@
 .serve-agileinfo {
   display: inline-block;
   padding: 0;
+  max-width: 275px;
   width: 30%;
   margin-right:2%;
 }
@@ -135,13 +135,13 @@ figure.effect-julia span{
 figure.effect-julia p {
   display: inline-block;
   float:top;
-  margin: 0 0 0.4em;
+  margin: 0.1em 0.1em 0.4em;
   padding: 0.5em 1em;
   background: rgba(35, 33, 32, 0.73);
   color: #fff;
   text-transform: none;
-  font-weight: 300;
-  font-size: 0.9em;
+  font-weight: 200;
+  font-size: 0.5em;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-360px,0,0);
