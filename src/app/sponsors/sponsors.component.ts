@@ -20,8 +20,9 @@ export class SponsorsComponent implements OnInit {
   ngOnInit() {
     this.getAllSponsors();
     this.title=  'My first AGM project';
-    this.lat = 51.678418;
-    this.lng= 7.809007;
+    this.lat = 45.523355;
+    this.lng= -73.705564;
+
   }
 
   getAllSponsors(){
