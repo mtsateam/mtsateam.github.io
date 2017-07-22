@@ -7,13 +7,15 @@
 
   <div class="gallery">
     <ul>
-      <li class="col-md-3" *ngFor="let event of allEvents">
+      <li class="col-md-3" *ngFor="let event of thumbnailEventList">
         <a href="#portfolioModal1" (click)=updateModalEvent(event) class="portfolio-link" data-toggle="modal">
           <img src="../../assets/img/execs/Annie.jpg" alt="">
         </a>
       </li>
     </ul>
   </div>
+
+  <input type="submit" id="submit" class="clearfix btn" value="Send">
 </section>
 
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

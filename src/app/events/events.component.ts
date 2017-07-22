@@ -11,6 +11,7 @@ export class EventsComponent implements OnInit {
   allEvents: any;
   upcomingEvent: any;
   eventByID: any;
+  thumbnailEventList: any;
 
 
   constructor(public eventsService: EventsService) { }
@@ -18,6 +19,7 @@ export class EventsComponent implements OnInit {
   ngOnInit() {
     this.getEventsList()
     this.getUpcomingEvent()
+    this.getThumbnailEvent();
   }
 
   getEventsList(){
@@ -34,7 +36,13 @@ export class EventsComponent implements OnInit {
 
   getUpcomingEvent(){
     this.eventsService.getUpcomingEvent().then((res) => {
+      this.upcomingEvent = res;
+    })
+  }
 
+  getThumbnailEvent(){
+    this.eventsService.getThumbnailEventList().then((res) => {
+      this.thumbnailEventList = res;
     })
   }
 

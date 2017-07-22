@@ -43,6 +43,18 @@ export class EventsService {
     });
   }
 
+  getThumbnailEventList(){
+    return new Promise((resolve, reject) => {
+      this.http.get('/events/thumbnail')
+        .map(res => res.json())
+        .subscribe(res => {
+          resolve(res)
+        }, (err) => {
+          reject(err);
+        });
+    });
+  }
+
   // saveBook(data) {
   //   return new Promise((resolve, reject) => {
   //     this.http.post('/book', data)
