@@ -1,31 +1,37 @@
-/*--services-*/
-
 #services {
-  padding: 5em 0;
-  background-color: #f4f4f4;
-  max-height:450px;
-}
-
-.grid {
+  padding: 1.2em 0.4em;
+  background-color: #ffffff;
+  max-height: 450px;
   width: 100%;
-  height:100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+}
+.grid {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  clear: both;
   margin: 0 auto;
   padding:2em 0 0em;
+  list-style: none;
   text-align: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space:nowrap;
 }
 .serve-agileinfo {
   display: inline-block;
   padding: 0;
-  width: 48%;
-  max-width: 275px;
+  width: 30%;
   margin-right:2%;
 }
 .serve-agileinfo.two {
   margin-top: 2%;
 }
+
+.serve-agileinfo .exec_portfolio{
+  display: inline-block !important;
+  white-space: normal;
+}
+
 /* Common style */
 .grid figure {
   position: relative;
@@ -45,7 +51,7 @@
 }
 
 .grid figure figcaption {
-  padding: 2em;
+  padding: 0.7em;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -78,11 +84,11 @@
 
 .grid figure h4 {
   word-spacing: -0.15em;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .grid figure h4 span {
-  font-weight: 100;
+  font-weight: 600;
   margin-left: 7px;
 }
 
@@ -118,21 +124,24 @@ figure.effect-julia figcaption {
 figure.effect-julia h4 {
   position: relative;
   padding: 0.5em 0;
-  font-size: 3em;
+  font-weight:400;
+  font-size: 1.25em;
   letter-spacing: 2px;
 }
 figure.effect-julia span{
   color:#f16930;
 }
+
 figure.effect-julia p {
   display: inline-block;
+  float:top;
   margin: 0 0 0.4em;
   padding: 0.5em 1em;
   background: rgba(35, 33, 32, 0.73);
   color: #fff;
   text-transform: none;
-  font-weight: 500;
-  font-size: 75%;
+  font-weight: 300;
+  font-size: 0.9em;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-360px,0,0);
@@ -180,9 +189,21 @@ figure.effect-julia:hover p {
   transform: translate3d(0,0,0);
 }
 p.ser-para-wthree {
-  padding: 7em 2em 2em 2em;
-  background-color: #fff;
-  line-height: 1.9em;
-  color:#777;
-  border-bottom:4px solid #f16930;
+   padding: 7em 1.2em 1.2em 1.2em;
+   font-size: 1.1em;
+   background-color: #fff;
+   line-height: 1.9em;
+   color:#777;
+   border-bottom:4px solid #f16930;
+ }
+
+p.ser-para-wthree#execName {
+  padding: 0.5em 0;
+  font-weight:400;
+  font-size: 1.25em;
+  letter-spacing: 2px;
+}
+
+p.ser-para-wthree#execName#lastName {
+  color:#f16930;
 }

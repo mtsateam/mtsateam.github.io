@@ -2,28 +2,29 @@
   <h2>Execs</h2>
   <hr class="star-primary">
 </div>
-
 <div class="services" id="services">
     <div class="grid">
       <div class="serve-agileinfo" *ngFor="let exec of allExecs">
-        <figure class="effect-julia" style="display: inline-block !important;">
+        <div class="exec_portfolio">
+        <figure class="effect-julia">
           <img src="../../assets/img/execs/Tiffany3.jpg" alt="img21"/>
           <figcaption>
-            <h4> {{exec.Name }}<span> {{exec.LastName}}</span></h4>
             <div>
-              <p> First Fact </p>
-              <p> Second Fact </p>
+              <p> First Fact </p> <br>
+              <p> Second Fact </p> <br>
               <p> Third Fact </p>
             </div>
             <!--<a class="scroll" href="#news">View more</a>-->
           </figcaption>
         </figure>
         <p class="ser-para-wthree">
-
+          <span style="font-weight: bolder; font-size: larger"> {{exec.Name }}<span style="color: #f16930;"> {{exec.LastName}}</span></span>
+          <br>
           {{ exec.Position }}
           <br>
           {{ exec.Major }} - {{ exec.Year }}
         <p>
+        </div>
       </div>
       <!--<div class="clearfix"></div>-->
     </div>
