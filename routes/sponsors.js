@@ -8,12 +8,26 @@ var google = require('../connection/google-maps')
 router.use('/:id', children_router);
 
 //Get all sponsors
-router.get('/', function(req, res, next){
+router.get('/', function(req, response, next){
   database.executeQuery("SELECT * FROM Sponsors ORDER BY Tier;", function(db){
-    res.send(db);
+    generateLocationID(db, function(sponsorList){
+      response.send(sponsorList);
+    })
   })
 });
 
+var generateLocationID = function(sponsorList, callback){
+  var index = 0;
+  sponsorList.forEach(function(sponsor){
+    google.addressIDCoder(sponsor.Address, function(ID){
+      sponsor.locationID = ID;
+      if(index == sponsorList.length - 1) {
+        callback(sponsorList);
+      }
+      index++;
+    })
+  })
+}
 
 //Get tier list
 router.get('/tier/:id', function(req, res, next){
@@ -39,16 +53,15 @@ router.get('/:id', function(req, res, next){
   })
 });
 
-children_router.get('/addressID', function(req, res, next){
+//Get Specific sponsor AddressID
+children_router.get('/locationID', function(req, res, next){
   sponsor_id = req.params.id;
   database.executeQuery("SELECT Address FROM Sponsors WHERE Name='" + sponsor_id + "';", function(db){
     google.addressIDCoder(db[0].Address, function(address){
-      console.log("ready")
       res.send(address);
     })
   })
 })
-
 
 //TODO FINISH QUERY COMMAND
 //Find by ID and update
