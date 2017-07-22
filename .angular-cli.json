@@ -34,7 +34,8 @@
         "./js/jquery.vegas.min.js",
         "./js/jquery.knob.js",
         "./js/theme.js",
-        "./js/wow.min.js"
+        "./js/wow.min.js",
+        "./js/validate.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

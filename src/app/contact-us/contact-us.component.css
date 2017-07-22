@@ -33,3 +33,15 @@ h1,h2,h3,h4,h5,h6 {
   font-weight:700;
   letter-spacing:1px;
 }
+
+.done {
+  display:none;
+}
+.error input,input.error,.error textarea,textarea.error {
+  background-color:#ffffff;
+  border-bottom:2px solid orangered !Important;
+  -webkit-transition:border linear 0.2s,box-shadow linear 0.2s;
+  -moz-transition:border linear 0.2s,box-shadow linear 0.2s;
+  -o-transition:border linear 0.2s,box-shadow linear 0.2s;
+  transition:border linear 0.2s,box-shadow linear 0.2s;
+}
