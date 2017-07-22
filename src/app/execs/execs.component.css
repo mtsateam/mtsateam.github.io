@@ -3,22 +3,24 @@
 #services {
   padding: 5em 0;
   background-color: #f4f4f4;
+  max-height:450px;
 }
 
 .grid {
   width: 100%;
+  height:100%;
   overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
   margin: 0 auto;
   padding:2em 0 0em;
-  list-style: none;
   text-align: center;
 }
 .serve-agileinfo {
   display: inline-block;
-  /**display: inline;*/
   padding: 0;
   width: 48%;
+  max-width: 275px;
   margin-right:2%;
 }
 .serve-agileinfo.two {
@@ -183,61 +185,4 @@ p.ser-para-wthree {
   line-height: 1.9em;
   color:#777;
   border-bottom:4px solid #f16930;
-}
-.gallery {
-  padding: 5em 0;
-  background-color: #f4f4f4;
-}
-.da-thumbs {
-  list-style: none;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-.da-thumbs li {
-  float: left;
-  margin: 0.4%;
-  padding: 3px;
-  position: relative;
-  width: 32.4%;
-}
-.da-thumbs li a,
-.da-thumbs li a img {
-  display: block;
-  position: relative;
-  width: 100%;
-}
-.da-thumbs li a {
-  overflow: hidden;
-}
-.da-thumbs li a div {
-  position: absolute;
-  background: rgba(17, 17, 17, 0.66);
-  width: 100%;
-  height: 100%;
-}
-.da-thumbs li a div p {
-  display: block;
-  padding: 10px 0;
-  margin: 11px 20px 20px 20px;
-  font-weight: normal;
-  text-transform: capitalize;
-  color: rgba(255,255,255,0.9);
-  text-align: center;
-  font-size: 1em;
-  line-height:1.9em;
-}
-.da-thumbs li a div  h5 {
-  color: #FFF;
-  font-size: 3em;
-  margin: 1em 0 0 0;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.da-thumbs li a div  h5 span {
-  color: #f16930;
-}
-.gallery-grids {
-  margin-top: 3em;
 }
