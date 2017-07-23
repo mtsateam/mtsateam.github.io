@@ -16,19 +16,6 @@ router.get('/', function(req, response, next){
   })
 });
 
-// var generateLocationID = function(jsonArray, callback){
-//   var index = 0;
-//   jsonArray.forEach(function(jsonObject){
-//     google.addressIDCoder(jsonObject.Address, function(ID){
-//       jsonObject.locationID = ID;
-//       if(index == jsonArray.length - 1) {
-//         callback(jsonArray);
-//       }
-//       index++;
-//     })
-//   })
-// }
-
 //Get tier list
 router.get('/tier/:id', function(req, res, next){
   tier_id = req.params.id;

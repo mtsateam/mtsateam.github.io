@@ -1,6 +1,7 @@
 .sponsors {
   background: #FFF;
   padding: 0px;
+  height:auto;
 }
 
 .sponsors h2 {
@@ -24,8 +25,4 @@
 .sponsors .discounts {
   text-align: left;
   table-layout: auto;
-}
-
-agm-map {
-  height: 300px;
 }

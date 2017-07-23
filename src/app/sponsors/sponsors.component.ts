@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SponsorsService } from './sponsors.service'
-import { AgmCoreModule } from '@agm/core';
 
 
 @Component({
@@ -10,32 +9,45 @@ import { AgmCoreModule } from '@agm/core';
 })
 export class SponsorsComponent implements OnInit {
   allSponsors : any;
-  sponsor_id : any;
+  sponsorLocation_id : any;
+  googleMaps_markers: any[];
   title: any ;
-  lat :any;
-  lng : any;
 
-  constructor(public sponsorsService: SponsorsService){}
+  zoom: number = 8;
+
+  McGill_lat = 45.504785;
+  McGill_lng = -73.577151;
+
+  constructor(public sponsorsService: SponsorsService){
+  }
 
   ngOnInit() {
     this.getAllSponsors();
-    this.title=  'My first AGM project';
-    this.lat = 45.523355;
-    this.lng= -73.705564;
+
 
   }
 
   getAllSponsors(){
     this.sponsorsService.getAllSponsors().then((res) => {
       this.allSponsors = res;
+      this.createGoogleMapsMarkers();
     })
   }
 
-
-
-  getSponsorAddressID(sponsor_ID){
-    this.sponsorsService.getSponsorAddressID(sponsor_ID).then((res) => {
-      this.sponsor_id = res;
+  getSponsorLocationCode(sponsor_ID) {
+    this.sponsorsService.getSponsorLocationCode(sponsor_ID).then((res) => {
+      this.sponsorLocation_id = res;
     })
+  }
+
+  createGoogleMapsMarkers(){
+    let markersList = [];
+    this.allSponsors.forEach(function(sponsor){
+      markersList.push(sponsor.locationID);
+    })
+    console.log(markersList)
+    this.googleMaps_markers = markersList;
   }
 }
+
+

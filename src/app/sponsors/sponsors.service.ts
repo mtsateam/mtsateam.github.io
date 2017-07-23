@@ -55,9 +55,9 @@ export class SponsorsService {
     });
   }
 
-  getSponsorAddressID(sponsor_ID){
+  getSponsorLocationCode(sponsor_ID){
     return new Promise((resolve, reject) => {
-      this.http.get('/sponsor_ID/addressID')
+      this.http.get('/sponsors/' + sponsor_ID + '/locationID')
         .map(res => res.json())
         .subscribe(res => {
           resolve(res)
@@ -66,5 +66,4 @@ export class SponsorsService {
         });
     })
   }
-
 }

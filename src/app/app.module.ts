@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http'
 import { AppComponent } from './app.component';
 
 //children modules
+import { NguiMapModule } from '@ngui/map'
+
 
 // import { EventsModule } from './events/events.module';
 // import { AboutUsModule } from './about-us/about-us.module';
@@ -40,9 +42,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CONST_ROUTING } from './app.routing';
 
 
-//Google Map Module
-import { AgmCoreModule } from '@agm/core';
-
 
 @NgModule({
   imports: [
@@ -50,8 +49,8 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     HttpModule,
     CONST_ROUTING,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCdW55DiWTiEPwLZZL_CL4inunzUkXg5uw'
+    NguiMapModule.forRoot({
+      apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCdW55DiWTiEPwLZZL_CL4inunzUkXg5uw'
     })
   ],
   declarations: [
@@ -80,4 +79,7 @@ import { AgmCoreModule } from '@agm/core';
   bootstrap: [AppComponent],
 
 })
-export class AppModule { }
+export class AppModule {}
+
+
+
