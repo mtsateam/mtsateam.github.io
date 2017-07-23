@@ -21,7 +21,6 @@
   "private": true,
   "homepage": "https://github.com/mtsateam/website-seventeen#readme",
   "dependencies": {
-    "@agm/core": "^1.0.0-beta.0",
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
@@ -31,10 +30,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "@google/maps": "^0.4.2",
-    "@ngui/map": "^0.18.4",
     "@types/es6-promise": "0.0.32",
-    "@types/googlemaps": "^3.26.16",
     "@types/jquery": "^3.2.6",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
