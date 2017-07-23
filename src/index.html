@@ -10,14 +10,17 @@
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
+  <script src="js/loader.js"></script>
 
 </head>
 <body>
 <app-root>
-  <div class="text-center">
-    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-    <div>Welcome to MTSA!</div>
-</div>
+  <div id="preloader">
+    <div class="txt">
+      <p class="txt-perc">0%</p>
+      <div class="progress"><span></span></div>
+    </div>
+  </div>
 </app-root>
 </body>
 </html>

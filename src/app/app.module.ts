@@ -50,7 +50,8 @@ import { CONST_ROUTING } from './app.routing';
     HttpModule,
     CONST_ROUTING,
     NguiMapModule.forRoot({
-      apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCdW55DiWTiEPwLZZL_CL4inunzUkXg5uw'
+      apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM' +
+      '&libraries=visualization,places,drawing'
     })
   ],
   declarations: [

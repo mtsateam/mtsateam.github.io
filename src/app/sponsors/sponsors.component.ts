@@ -12,19 +12,28 @@ export class SponsorsComponent implements OnInit {
   sponsorLocation_id : any;
   googleMaps_markers: any[];
   title: any ;
-
-  zoom: number = 8;
-
-  McGill_lat = 45.504785;
-  McGill_lng = -73.577151;
+  marker = {
+    display: true,
+    lat: null,
+    lng: null,
+  };
 
   constructor(public sponsorsService: SponsorsService){
   }
 
   ngOnInit() {
     this.getAllSponsors();
+  }
 
+  clicked({target: marker}) {
+    this.marker.lat = marker.getPosition().lat();
+    this.marker.lng = marker.getPosition().lng();
 
+    marker.nguiMapComponent.openInfoWindow('iw', marker);
+  }
+
+  hideMarkerInfo() {
+    this.marker.display = !this.marker.display;
   }
 
   getAllSponsors(){

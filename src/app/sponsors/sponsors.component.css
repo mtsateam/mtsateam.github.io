@@ -1,20 +1,97 @@
-.sponsors {
-  background: #FFF;
-  padding: 0px;
-  height:auto;
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
 }
 
-.sponsors h2 {
+.btnghost {
+  border:2px solid #333;
+  background-color:transparent;
+  padding:15px 20px;
+  letter-spacing:3px;
+  font-size:12px;
+  text-transform:uppercase;
+  font-weight:400;
+  color:#333;
+  margin-top:20px;
+  display:inline-block;
+}
+.btnghost:hover {
+  background-color:#333;
+  color:#fff;
+  border:2px solid #333;
+}
+
+.sponsors-modal {
+  background: #FFF;
+  padding: 0px;
+}
+
+.sponsors-modal h2 {
   padding-top: 100px;
 }
 
-.sponsor .sponsor-list {
+.sponsors-modal .sponsor-list {
   display: table-cell;
   vertical-align: middle;
   float: none;
 }
 
-.sponsors .text {
+.sponsors-modal .text {
   color: #666;
   line-height: 34px;
   padding: 0;
@@ -22,7 +99,24 @@
   margin-bottom: 20px;
 }
 
-.sponsors .discounts {
+.sponsors-modal .discounts {
   text-align: left;
   table-layout: auto;
 }
+
+.modal .sponsors-modal .modal-header{
+  padding: 0;
+}
+
+.sponsors .container .map .section-title{
+  display:inline-block;
+}
+
+.sponsors a{
+  display: inline-block;
+}
+
+
+
+
+
