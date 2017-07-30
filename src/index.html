@@ -7,20 +7,36 @@
   <title>#mtsalovesyou</title>
   <base href="/">
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-  <script src="js/loader.js"></script>
+  <!--start at top of page after every refresh-->
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      window.scrollTo(0,0);
+    });
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="./css/loading-page.css">
 
 </head>
 <body>
 <app-root>
-  <div id="preloader">
-    <div class="txt">
-      <p class="txt-perc">0%</p>
-      <div class="progress"><span></span></div>
+  <div class="loading-page-background">
+    <div class="loading-page">
+      <h1 class="loader-title">Welcome to MTSA</h1>
+      <div class="loader">
+        <div class="loader-spin"></div>
+        <div class="loader-text">
+          <p> Almost there....</p>
+        </div>
+      </div>
     </div>
   </div>
 </app-root>
 </body>
 </html>
+
+
+

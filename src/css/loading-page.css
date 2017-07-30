@@ -1,48 +1,19 @@
-body {
-  width:100%;
+.loading-page-background{
+  background-image: url('../assets/img/loading-background.jpg');
+  background-size: cover;
+  background-position: center;
   height:100%;
-  color:#fff;
-  background-color:#000;
-  font-weight:300;
-}
-html {
   width:100%;
-  height:100%;
-}
-h1,h2,h3,h4,h5,h6 {
-  margin:0 0 35px;
-  text-transform:uppercase;
-  font-weight:700;
-  letter-spacing:1px;
-}
-p {
-  margin:0 0 25px;
-  font-size:18px;
-  line-height:1.5;
-}
-@media(min-width:768px) {
-  p {
-    margin:0 0 35px;
-    font-size:20px;
-    line-height:1.6;
-  }
-}
-a {
-  color:inherit;
-  -webkit-transition:all .2s ease-in-out;
-  -moz-transition:all .2s ease-in-out;
-  transition:all .2s ease-in-out;
-}
-a:hover,a:focus {
-  text-decoration:none;
-  color:inherit;
-}
-.light {
-  font-weight:400;
 }
 
+.loading-page{
+  background-color: rgba(0, 0, 0, 0.6);
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
 
-/* =========================  LOADING PAGE  ============================== */
+}
 
 .loader-title{
   display: inline-block;
@@ -113,6 +84,3 @@ a:hover,a:focus {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-/* =========================  END LOADING PAGE  ============================== */
-
