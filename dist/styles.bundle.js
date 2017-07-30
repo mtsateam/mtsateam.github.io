@@ -1,5 +1,12 @@
 webpackJsonp([2],{
 
+/***/ "../../../../../src/assets/img/loading-background.jpg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "loading-background.063a403f5ceeb0c740a1.jpg";
+
+/***/ }),
+
 /***/ "../../../../../src/css/animate.min.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44,6 +51,33 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--9-1!../../node_modules/postcss-loader/index.js??postcss!./font-awesome.css", function() {
 			var newContent = require("!!../../node_modules/css-loader/index.js??ref--9-1!../../node_modules/postcss-loader/index.js??postcss!./font-awesome.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "../../../../../src/css/loading-page.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/css/loading-page.css");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__("../../../../style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--9-1!../../node_modules/postcss-loader/index.js??postcss!./loading-page.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--9-1!../../node_modules/postcss-loader/index.js??postcss!./loading-page.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -208,6 +242,21 @@ exports.push([module.i, "/*!\n *  Font Awesome 4.2.0 by @davegandy - http://font
 
 /***/ }),
 
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/css/loading-page.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".loading-page-background{\n  background-image: url(" + __webpack_require__("../../../../../src/assets/img/loading-background.jpg") + ");\n  background-size: cover;\n  background-position: center;\n  height:100%;\n  width:100%;\n}\n\n.loading-page{\n  background-color: rgba(0, 0, 0, 0.6);\n  height:100%;\n  width:100%;\n  padding:0;\n  margin:0;\n\n}\n\n.loader-title{\n  display: inline-block;\n  width:100%;\n  text-align: center;\n  padding-top: 100px;\n  padding-bottom: 50px;\n  color: white;\n  margin:0 0 35px;\n  text-transform:uppercase;\n  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;\n  font-size: 50px;\n  font-weight: 400;\n}\n\n.loader{\n  position: relative;\n  top:0;\n  bottom:0;\n  left:0;\n  right:0;\n  padding-top: 200px\n}\n\n.loader-text{\n  position: absolute;\n  top:0;\n  bottom:0;\n  left:0;\n  right:0;\n  margin:auto;\n  padding-bottom: 15px;\n  width:230px;\n  height:230px;\n  color: white;\n  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;\n  font-size: 20px;\n  font-weight: lighter;\n}\n\n.loader-text p{\n  text-align: center;\n  padding: 40% 0;\n}\n\n.loader-spin {\n  position:absolute;\n  top:0;\n  bottom:0;\n  left:0;\n  right:0;\n  margin:auto;\n  border: 16px solid #f3f3f3;\n  border-radius: 50%;\n  border-top: 16px solid #145e58;\n  width: 200px;\n  height: 200px;\n  -webkit-animation: spin 2s linear infinite;\n  animation: spin 2s linear infinite;\n}\n\n@-webkit-keyframes spin {\n  0% { -webkit-transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); }\n}\n\n@keyframes spin {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../../src/styles.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -216,7 +265,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  width:100%;\n  height:100%;\n  color:#fff;\n  background-color:#000;\n  font-weight:300;\n}\nhtml {\n  width:100%;\n  height:100%;\n}\nh1,h2,h3,h4,h5,h6 {\n  margin:0 0 35px;\n  text-transform:uppercase;\n  font-weight:700;\n  letter-spacing:1px;\n}\np {\n  margin:0 0 25px;\n  font-size:18px;\n  line-height:1.5;\n}\n@media(min-width:768px) {\n  p {\n    margin:0 0 35px;\n    font-size:20px;\n    line-height:1.6;\n  }\n}\na {\n  color:inherit;\n  transition:all .2s ease-in-out;\n}\na:hover,a:focus {\n  text-decoration:none;\n  color:inherit;\n}\n.light {\n  font-weight:400;\n}\n", ""]);
+exports.push([module.i, "body {\n  width:100%;\n  height:100%;\n  color:#fff;\n  background-color:#000;\n  font-weight:300;\n}\nhtml {\n  width:100%;\n  height:100%;\n}\nh1,h2,h3,h4,h5,h6 {\n  margin:0 0 35px;\n  text-transform:uppercase;\n  font-weight:700;\n  letter-spacing:1px;\n}\np {\n  margin:0 0 25px;\n  font-size:18px;\n  line-height:1.5;\n}\n@media(min-width:768px) {\n  p {\n    margin:0 0 35px;\n    font-size:20px;\n    line-height:1.6;\n  }\n}\na {\n  color:inherit;\n  transition:all .2s ease-in-out;\n}\na:hover,a:focus {\n  text-decoration:none;\n  color:inherit;\n}\n.light {\n  font-weight:400;\n}\n\n\n/* =========================  LOADING PAGE  ============================== */\n\n.loader-title{\n  display: inline-block;\n  width:100%;\n  text-align: center;\n  padding-top: 100px;\n  padding-bottom: 50px;\n  color: white;\n  margin:0 0 35px;\n  text-transform:uppercase;\n  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;\n  font-size: 50px;\n  font-weight: 400;\n}\n\n.loader{\n  position: relative;\n  top:0;\n  bottom:0;\n  left:0;\n  right:0;\n  padding-top: 200px\n}\n\n.loader-text{\n  position: absolute;\n  top:0;\n  bottom:0;\n  left:0;\n  right:0;\n  margin:auto;\n  padding-bottom: 15px;\n  width:230px;\n  height:230px;\n  color: white;\n  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;\n  font-size: 20px;\n  font-weight: lighter;\n}\n\n.loader-text p{\n  text-align: center;\n  padding: 40% 0;\n}\n\n.loader-spin {\n  position:absolute;\n  top:0;\n  bottom:0;\n  left:0;\n  right:0;\n  margin:auto;\n  border: 16px solid #f3f3f3;\n  border-radius: 50%;\n  border-top: 16px solid #145e58;\n  width: 200px;\n  height: 200px;\n  -webkit-animation: spin 2s linear infinite;\n  animation: spin 2s linear infinite;\n}\n\n@-webkit-keyframes spin {\n  0% { -webkit-transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); }\n}\n\n@keyframes spin {\n  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\n  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}\n\n/* =========================  END LOADING PAGE  ============================== */\n\n", ""]);
 
 // exports
 
@@ -574,9 +623,10 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__("../../../../../src/css/loading-page.css");
 __webpack_require__("../../../../../src/styles.css");
 __webpack_require__("../../../../bootstrap/dist/css/bootstrap.min.css");
 __webpack_require__("../../../../../src/css/font-awesome.css");
@@ -585,5 +635,5 @@ module.exports = __webpack_require__("../../../../../src/css/animate.min.css");
 
 /***/ })
 
-},[2]);
+},[0]);
 //# sourceMappingURL=styles.bundle.js.map

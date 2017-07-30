@@ -125,7 +125,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us></app-about-us>\n\n<app-news-banner></app-news-banner>\n\n<app-events></app-events>\n\n<app-execs></app-execs>\n\n<app-sponsors></app-sponsors>\n\n<app-contact-us></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
+module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<app-events id=\"events\"></app-events>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
 
 /***/ }),
 
@@ -281,6 +281,7 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sponsors_sponsors_component__ = __webpack_require__("../../../../../src/app/sponsors/sponsors.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__execs_execs_component__ = __webpack_require__("../../../../../src/app/execs/execs.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__welcome_page_welcome_page_component__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__news_banner_news_banner_component__ = __webpack_require__("../../../../../src/app/news-banner/news-banner.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CONST_ROUTING; });
 
 
@@ -288,23 +289,16 @@ AppModule = __decorate([
 
 
 
+
 var ROUTES = [
-    //full : makes sure the path is absolute path
-    // { path: '', redirectTo: 'welcome-page' , pathMatch: 'full'},
-    // { path: 'welcome-page', loadChildren: './welcome-page/welcome-page.module#WelcomePageModule' },
-    // { path: 'about-us', loadChildren: './about-us/about-us.module#AboutUsModule' },
-    // { path: 'events', loadChildren: './events/events.module#EventsModule' },
-    // { path: 'execs', loadChildren: './execs/execs.module#ExecsModule' },
-    // { path: 'sponsors', loadChildren: './sponsors/sponsors.module#SponsorsModule' },
-    { path: '', redirectTo: 'welcome-page', pathMatch: 'full' },
-    { path: 'welcome-page', component: __WEBPACK_IMPORTED_MODULE_5__welcome_page_welcome_page_component__["a" /* WelcomePageComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_5__welcome_page_welcome_page_component__["a" /* WelcomePageComponent */] },
     { path: 'about-us', component: __WEBPACK_IMPORTED_MODULE_2__about_us_about_us_component__["a" /* AboutUsComponent */] },
+    { path: 'news-banner', component: __WEBPACK_IMPORTED_MODULE_6__news_banner_news_banner_component__["a" /* NewsBannerComponent */] },
     { path: 'events', component: __WEBPACK_IMPORTED_MODULE_1__events_events_component__["a" /* EventsComponent */] },
     { path: 'execs', component: __WEBPACK_IMPORTED_MODULE_4__execs_execs_component__["a" /* ExecsComponent */] },
     { path: 'sponsors', component: __WEBPACK_IMPORTED_MODULE_3__sponsors_sponsors_component__["a" /* SponsorsComponent */] },
 ];
-// export const CONST_ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES, { useHash: true });
-var CONST_ROUTING = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(ROUTES);
+var CONST_ROUTING = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(ROUTES, { useHash: true });
 //# sourceMappingURL=app.routing.js.map
 
 /***/ }),
@@ -804,7 +798,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/menu.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-custom navbar-fixed-top\" role=\"navigation\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">\n        <i class=\"fa fa-bars\"></i>\n      </button>\n      <a class=\"navbar-brand page-scroll\" href=\"\">\n        #mtsalovesyou </a>\n    </div>\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse navbar-right navbar-main-collapse\">\n      <ul class=\"nav navbar-nav\">\n        <li>\n          <a href=\"index.html\">Home</a>\n        </li>\n        <li>\n          <a href=\"portfolio-item.html\">Single Project</a>\n        </li>\n        <li>\n          <a href=\"page-sample.html\">Page Sample</a>\n        </li>\n        <li>\n          <a href=\"contact.html\">Hire me</a>\n        </li>\n      </ul>\n    </div>\n    <!-- /.navbar-collapse -->\n  </div>\n  <!-- /.container -->\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-custom navbar-fixed-top\" role=\"navigation\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">\n        <i class=\"fa fa-bars\"></i>\n      </button>\n      <a class=\"navbar-brand page-scroll\" href=\"\">\n        #mtsalovesyou </a>\n    </div>\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse navbar-right navbar-main-collapse\">\n      <ul class=\"nav navbar-nav\">\n        <li>\n          <a href=\"#about-us\" class=\"page-scroll\">About Us</a>\n        </li>\n        <li>\n          <a href=\"#news-banner\" class=\"page-scroll\">What's new</a>\n        </li>\n        <li>\n          <a href=\"#events\" class=\"page-scroll\">Events</a>\n        </li>\n        <li>\n          <a href=\"#execs\" class=\"page-scroll\">Team</a>\n        </li>\n        <li>\n          <a href=\"#sponsors\" class=\"page-scroll\">Sponsors</a>\n        </li>\n        <li>\n          <a href=\"#contact-us\" class=\"page-scroll\">Contact Us</a>\n        </li>\n      </ul>\n    </div>\n    <!-- /.navbar-collapse -->\n  </div>\n  <!-- /.container -->\n</nav>\n"
 
 /***/ }),
 
@@ -1021,7 +1015,6 @@ var SponsorsComponent = (function () {
         this.allSponsors.forEach(function (sponsor) {
             markersList.push(sponsor.locationID);
         });
-        console.log(markersList);
         this.googleMaps_markers = markersList;
     };
     return SponsorsComponent;
@@ -1158,7 +1151,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/welcome-page/welcome-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"intro\">\n  <div class=\"intro-body\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-8 col-md-offset-2\">\n          <h1 class=\"brand-heading\">McGill Taiwanese Students' Association</h1>\n          <p class=\"intro-text\">\n            <i class=\"fa fa-cutlery\" aria-hidden=\"true\"></i>Eat  <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i>Laugh  <i class=\"fa fa-heart\" aria-hidden=\"true\"></i>Love\n          </p>\n          <a href=\"#about\" class=\"btn btn-circle page-scroll\">\n            <i class=\"fa fa-angle-double-down animated\"></i>\n          </a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"intro\">\n  <div class=\"intro-body\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-8 col-md-offset-2\">\n          <h1 class=\"brand-heading\">McGill Taiwanese Students' Association</h1>\n          <p class=\"intro-text\">\n            <i class=\"fa fa-cutlery\" aria-hidden=\"true\"></i>Eat  <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i>Laugh  <i class=\"fa fa-heart\" aria-hidden=\"true\"></i>Love\n          </p>\n          <a href=\"#about-us\" class=\"btn btn-circle page-scroll\">\n            <i class=\"fa fa-angle-double-down animated\"></i>\n          </a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1404,7 +1397,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("../../../../../src/main.ts");
@@ -1412,5 +1405,5 @@ module.exports = __webpack_require__("../../../../../src/main.ts");
 
 /***/ })
 
-},[0]);
+},[1]);
 //# sourceMappingURL=main.bundle.js.map
