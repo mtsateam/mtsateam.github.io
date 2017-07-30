@@ -54,7 +54,6 @@ export class SponsorsComponent implements OnInit {
     this.allSponsors.forEach(function(sponsor){
       markersList.push(sponsor.locationID);
     })
-    console.log(markersList)
     this.googleMaps_markers = markersList;
   }
 }
