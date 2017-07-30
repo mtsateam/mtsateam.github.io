@@ -12,8 +12,6 @@ export class WelcomePageComponent implements AfterViewInit {
   constructor(private elementRef: ElementRef) { }
 
   ngAfterViewInit() {
-    this.createTagHTML(this.elementRef, "link", "text/css", "stylesheet", "http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic");
-    this.createTagHTML(this.elementRef, "link", "text/css", "stylesheet", "http://fonts.googleapis.com/css?family=Montserrat:400,700");
   }
 
 
