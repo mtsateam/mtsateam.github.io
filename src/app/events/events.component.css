@@ -94,7 +94,7 @@
 .gallery ul li {
   margin:0;
   max-width: 23%;
-  min-width: 250px;
+  min-width: 180px;
   position:relative;
   list-style:none;
   float:left;

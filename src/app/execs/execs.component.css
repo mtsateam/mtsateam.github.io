@@ -99,7 +99,7 @@
 
 .grid figure p {
   letter-spacing: 1px;
-  font-size: 68.5%;
+  font-size: 57%;
 }
 
 /* Individual effects */
@@ -190,9 +190,9 @@ figure.effect-julia:hover p {
 }
 p.ser-para-wthree {
    padding: 7em 1.2em 1.2em 1.2em;
-   font-size: 1.1em;
+   font-size: 0.9em;
    background-color: #fff;
-   line-height: 1.9em;
+   line-height: 1.35em;
    color:#777;
    border-bottom:4px solid #f16930;
  }

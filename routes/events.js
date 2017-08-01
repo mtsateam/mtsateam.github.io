@@ -11,7 +11,7 @@ router.get('/', function(req, res, next){
 
 //Get Thumbnail Events
 router.get('/thumbnail', function(req, res, next){
-  connection.executeQuery("SELECT TOP 8 *, CONVERT(varchar(50), Date, 107) AS EventDate, CONVERT(varchar(50), Time, 108) AS EventTime FROM Events ORDER BY CreationDate;", function(db){
+  connection.executeQuery("SELECT TOP 4 *, CONVERT(varchar(50), Date, 107) AS EventDate, CONVERT(varchar(50), Time, 108) AS EventTime FROM Events ORDER BY CreationDate;", function(db){
     res.send(db);
   })
 });
