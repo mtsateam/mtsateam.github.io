@@ -10,7 +10,6 @@
 
 .item {
   background-position: center;
-  background-image: url("../../assets/img/execs/Tiffany2.jpg");
   background-size: cover;
   height: 100%;
   /*position:relative;*/
@@ -21,7 +20,8 @@
   position:absolute;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  line-height: normal;
+  margin-bottom: 10px;
 }
 
 @media(min-width: 768px){
