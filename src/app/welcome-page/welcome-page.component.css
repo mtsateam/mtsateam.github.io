@@ -6,11 +6,7 @@
   text-align:center;
   color:#fff;
   font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.88)),url('../../assets/img/intro-banner.png');
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  background-size:cover;
-  -o-background-size:cover;
+  background-color:rgba(0, 0, 0, 0.7);
 }
 .intro .intro-body {
   display:table-cell;

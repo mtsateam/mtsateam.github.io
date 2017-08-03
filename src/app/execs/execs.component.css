@@ -1,6 +1,13 @@
+.execs{
+  background-color:rgba(0, 0, 0, 0.4);
+}
+
+.section-title{
+  color:white;
+}
+
 #services {
   padding: 0 1.2em 0.8em 0.8em ;
-  background-color: #ffffff;
   max-height: 450px;
   width: 100%;
 }

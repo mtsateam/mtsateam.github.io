@@ -1,32 +1,33 @@
-<div class="col-lg-12 text-center">
-  <h2>Execs</h2>
-  <hr class="star-primary">
-</div>
-<div class="services" id="services">
-    <div class="grid">
-      <div class="serve-agileinfo" *ngFor="let exec of allExecs">
-        <div class="exec_portfolio">
-        <figure class="effect-julia">
-          <img src="../../assets/img/execs/{{exec.imgUrl}}" alt="img21"/>
-          <figcaption>
-            <div>
-              <p> First Fact </p> <br>
-              <p> Second Fact </p> <br>
-              <p> Third Fact </p>
-            </div>
-            <!--<a class="scroll" href="#news">View more</a>-->
-          </figcaption>
-        </figure>
-        <p class="ser-para-wthree">
-          <span style="font-weight: bolder; font-size: larger"> {{exec.Name }}<span style="color: #f16930;"> {{exec.LastName}}</span></span>
-          <br>
-          {{ exec.Position }}
-          <br>
-          {{ exec.Major }} - {{ exec.Year }}
-        <p>
+<section class="execs">
+  <div class="col-lg-12 text-center">
+    <h2 class="section-title">Execs</h2>
+    <hr class="star-primary">
+  </div>
+  <div class="services" id="services">
+      <div class="grid">
+        <div class="serve-agileinfo" *ngFor="let exec of allExecs">
+          <div class="exec_portfolio">
+          <figure class="effect-julia">
+            <img src="../../assets/img/execs/{{exec.imgUrl}}" alt="img21"/>
+            <figcaption>
+              <div>
+                <p> First Fact </p> <br>
+                <p> Second Fact </p> <br>
+                <p> Third Fact </p>
+              </div>
+              <!--<a class="scroll" href="#news">View more</a>-->
+            </figcaption>
+          </figure>
+          <p class="ser-para-wthree">
+            <span style="font-weight: bolder; font-size: larger"> {{exec.Name }}<span style="color: #f16930;"> {{exec.LastName}}</span></span>
+            <br>
+            {{ exec.Position }}
+            <br>
+            {{ exec.Major }} - {{ exec.Year }}
+          <p>
+          </div>
         </div>
+        <!--<div class="clearfix"></div>-->
       </div>
-      <!--<div class="clearfix"></div>-->
-    </div>
-</div>
-
+  </div>
+</section>

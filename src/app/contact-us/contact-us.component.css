@@ -1,3 +1,7 @@
+#contact{
+  background-color: white;
+}
+
 #contactform input,#contactform textarea {
   border:0px;
   border-bottom:2px solid #333;

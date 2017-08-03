@@ -1,3 +1,7 @@
+.sponsors{
+  background-color: white;
+}
+
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -5,7 +9,6 @@
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 100px 0;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
@@ -116,7 +119,38 @@
   display: inline-block;
 }
 
+#sponsors input{
+  display: inline-block;
+  position:relative;
+  float:top;
+  border:0px;
+  border-bottom:2px solid #333;
+  width:100%;
+  background-color:transparent;
+  padding:20px 0;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right:auto;
 
+}
+#sponsors input#submit {
+  width:auto;
+  border:2px solid;
+  padding:10px 20px;
+  display:inline-block;
+}
+#sponsors input#submit:hover {
+  background-color:#333;
+  color:#fff;
+  border:2px solid #333;
+}
+#sponsors input:focus,.portfolio input:active {
+  border-top: 0px;
+  border-bottom: 2px solid #1d1d1d;
+  outline: 0;
+  outline: none;
 
-
+}
 
