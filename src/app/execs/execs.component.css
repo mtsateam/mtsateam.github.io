@@ -1,5 +1,5 @@
 .execs{
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgba(0, 0, 0, 0.6);
 }
 
 .section-title{
@@ -46,7 +46,7 @@
   overflow: hidden;
   margin: 7px 1% 22px 1%;
   height: auto;
-  background: #3085a3;
+  background: #323232;
   text-align: center;
   cursor: pointer;
 }
