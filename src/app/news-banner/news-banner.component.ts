@@ -21,6 +21,9 @@ export class NewsBannerComponent implements OnInit {
   getUpcomingEvents(){
     this.eventsService.getUpcomingEvent().then((res) => {
       this.upcomingEvents=res;
+      console.log(this.upcomingEvents);
+      console.log(this.upcomingEvents[0].Start);
+      console.log(typeof this.upcomingEvents[0].Start);
     })
   }
 
