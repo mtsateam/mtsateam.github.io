@@ -859,7 +859,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#myCarousel{\n  height: 150px;\n  background-color: black;\n}\n\n.carousel-inner{\n  height:100%;\n\n}\n\n.item {\n  background-position: center;\n  background-size: cover;\n  height: 100%;\n  /*position:relative;*/\n  overflow: hidden;\n}\n\n.carousel-caption{\n  position:absolute;\n  margin-left: auto;\n  margin-right: auto;\n  line-height: normal;\n  margin-bottom: 10px;\n}\n\n@media(min-width: 768px){\n  #myCarousel{\n    height: 50%;\n  }\n}\n\n\n", ""]);
+exports.push([module.i, "#myCarousel{\n  height: 150px;\n  background-color: black;\n}\n\n.carousel-inner{\n  height:100%;\n\n}\n\n.item {\n  background-position: center;\n  background-size: cover;\n  height: 100%;\n  /*position:relative;*/\n  overflow: hidden;\n}\n\n.carousel-caption{\n  position:absolute;\n  margin-left: auto;\n  margin-right: auto;\n  line-height: normal;\n  margin-bottom: 10px;\n}\n\n@media(min-width: 768px){\n  #myCarousel{\n    height: 60%;\n  }\n}\n\n\n", ""]);
 
 // exports
 
