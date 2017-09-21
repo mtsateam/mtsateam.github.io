@@ -22,7 +22,7 @@
   </div>
 
   <a href="#sponsorsModal" class="portfolio-link" data-toggle="modal">
-    <input type="button" id="submit" class="clearfix btn" value="View all sponsors">
+    <input type="button" id="allSponsorBtn" class="clearfix btn"  value="View all sponsors">
   </a>
 </section>
 
@@ -44,7 +44,7 @@
           <tr *ngFor="let sponsor of allSponsors">
             <td>{{ sponsor.Name }}</td>
             <td class="hidden-xs">{{sponsor.Address}}</td>
-            <td>{{sponsor.DiscountType}} off with MTSA card</td>
+            <td>{{sponsor.DiscountType}} </td>
           </tr>
         </table>
       </div>
