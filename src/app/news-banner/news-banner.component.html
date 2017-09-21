@@ -8,7 +8,7 @@
 
   <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item"  *ngFor="let event of upcomingEvents">
+        <div class="item active"  *ngFor="let event of upcomingEvents">
           <a href="{{event.EventURL}}" >
             <img src="../../assets/img/events/{{event.Name}}.jpg" alt="Chania">
             <div class="carousel-caption">
@@ -18,7 +18,7 @@
             </div>
           </a>
         </div>
-          <div class="item active" *ngFor="let sponsor of sponsorOfTheWeek">
+          <div class="item" *ngFor="let sponsor of sponsorOfTheWeek">
             <a href="{{sponsor.URL}}" >
               <img src="../../assets/img/sponsors/{{sponsor.Name}}.jpg" alt="Chania">
               <div class="carousel-caption">
