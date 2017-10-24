@@ -7,7 +7,10 @@
 var app = require('../app');
 var debug = require('debug')('mean-app:server');
 var http = require('http');
-
+setInterval(function() {
+    http.get("http://www.mtsa.tw");
+    console.log("pinged");
+}, 300000); // ping app every 5 minutes to prevent sleeping
 /**
  * Get port from environment and store in Express.
  */
