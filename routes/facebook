@@ -1,0 +1,17 @@
+var express = require('express');
+var router = express.Router();
+var FB = require('fb');
+var access_token = 'EAACEdEose0cBABXYJ8BWMY2blNJGQTQ14ZCHZCYTqechUBnZAQQ8qn96GqDzg7EqdguOf7ZAjWQAtJoxtZAPZCvkdqviKLcBn576iqh92EJ9CHSljMWXCzjTWk21ZC2w82Cn2lIZA4ACmhRBUKrrHaIbgtjIbB2VNc5eAvJgZBsdueiGaJcl68yrzHaZCQzmuki47id53Ds9nmeQZDZD';
+
+FB.setAccessToken(access_token);
+
+
+
+router.get('/', function(req, res, next){
+  FB.api("/784055668322802/albums", function (response) {
+      res.send(response);
+    }
+  );
+});
+
+module.exports = router;
