@@ -178,14 +178,16 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__welcome_page_welcome_page_component__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__contact_us_contact_us_component__ = __webpack_require__("../../../../../src/app/contact-us/contact-us.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__execs_execs_service__ = __webpack_require__("../../../../../src/app/execs/execs.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__about_us_about_us_service__ = __webpack_require__("../../../../../src/app/about-us/about-us.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__events_events_service__ = __webpack_require__("../../../../../src/app/events/events.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sponsors_sponsors_service__ = __webpack_require__("../../../../../src/app/sponsors/sponsors.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__welcome_page_welcome_page_service__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__news_banner_news_banner_component__ = __webpack_require__("../../../../../src/app/news-banner/news-banner.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__photos_photos_component__ = __webpack_require__("../../../../../src/app/photos/photos.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__news_banner_news_banner_component__ = __webpack_require__("../../../../../src/app/news-banner/news-banner.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__execs_execs_service__ = __webpack_require__("../../../../../src/app/execs/execs.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__about_us_about_us_service__ = __webpack_require__("../../../../../src/app/about-us/about-us.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__events_events_service__ = __webpack_require__("../../../../../src/app/events/events.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__sponsors_sponsors_service__ = __webpack_require__("../../../../../src/app/sponsors/sponsors.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__welcome_page_welcome_page_service__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__photos_photos_service__ = __webpack_require__("../../../../../src/app/photos/photos.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -206,6 +208,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 // import { WelcomePageModule } from './welcome-page/welcome-page.module';
 // import { ExecsModule } from './execs/execs.module';
 //components
+
+
 
 
 
@@ -235,7 +239,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_21__app_routing__["a" /* CONST_ROUTING */],
+            __WEBPACK_IMPORTED_MODULE_23__app_routing__["a" /* CONST_ROUTING */],
             __WEBPACK_IMPORTED_MODULE_5__ngui_map__["a" /* NguiMapModule */].forRoot({
                 apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM' +
                     '&libraries=visualization,places,drawing'
@@ -251,16 +255,18 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_11__welcome_page_welcome_page_component__["a" /* WelcomePageComponent */],
             __WEBPACK_IMPORTED_MODULE_12__contact_us_contact_us_component__["a" /* ContactUsComponent */],
             __WEBPACK_IMPORTED_MODULE_13__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__news_banner_news_banner_component__["a" /* NewsBannerComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__news_banner_news_banner_component__["a" /* NewsBannerComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__photos_photos_component__["a" /* PhotosComponent */],
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_14__execs_execs_service__["a" /* ExecsService */],
-            __WEBPACK_IMPORTED_MODULE_15__about_us_about_us_service__["a" /* AboutUsService */],
-            __WEBPACK_IMPORTED_MODULE_16__events_events_service__["a" /* EventsService */],
-            __WEBPACK_IMPORTED_MODULE_17__sponsors_sponsors_service__["a" /* SponsorsService */],
-            __WEBPACK_IMPORTED_MODULE_18__welcome_page_welcome_page_service__["a" /* WelcomePageService */],
+            __WEBPACK_IMPORTED_MODULE_16__execs_execs_service__["a" /* ExecsService */],
+            __WEBPACK_IMPORTED_MODULE_17__about_us_about_us_service__["a" /* AboutUsService */],
+            __WEBPACK_IMPORTED_MODULE_18__events_events_service__["a" /* EventsService */],
+            __WEBPACK_IMPORTED_MODULE_19__sponsors_sponsors_service__["a" /* SponsorsService */],
+            __WEBPACK_IMPORTED_MODULE_20__welcome_page_welcome_page_service__["a" /* WelcomePageService */],
+            __WEBPACK_IMPORTED_MODULE_21__photos_photos_service__["a" /* PhotosService */],
             {
-                provide: __WEBPACK_IMPORTED_MODULE_20__angular_common__["a" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_20__angular_common__["b" /* HashLocationStrategy */],
+                provide: __WEBPACK_IMPORTED_MODULE_22__angular_common__["a" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_22__angular_common__["b" /* HashLocationStrategy */],
             }
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]],
@@ -557,7 +563,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".execs{\n  background-color:rgba(0, 0, 0, 0.6);\n}\n\n.section-title{\n  color:white;\n}\n\n#services {\n  padding: 0 1.2em 0.8em 0.8em ;\n  max-height: 450px;\n  width: 100%;\n}\n.grid {\n  height: 100%;\n  width: 100%;\n  padding: 0 10px;\n  position: relative;\n  clear: both;\n  margin: 0 auto;\n  list-style: none;\n  text-align: center;\n  overflow-y: hidden;\n  overflow-x: scroll;\n  white-space:nowrap;\n}\n.serve-agileinfo {\n  display: inline-block;\n  min-width: 160px;\n  max-width: 275px;\n  width: 30%;\n  margin-right:2%;\n}\n.serve-agileinfo.two {\n  margin-top: 2%;\n}\n\n.serve-agileinfo .exec_portfolio{\n  display: inline-block !important;\n  white-space: normal;\n}\n\n/* Common style */\n.grid figure {\n  position: relative;\n  float: left;\n  overflow: hidden;\n  margin: 7px 1% 10px 1%;\n  height: auto;\n  background: #323232;\n  text-align: center;\n  cursor: pointer;\n}\n\n.grid figure img {\n  position: relative;\n  display: block;\n  max-width: 100%;\n}\n\n.grid figure figcaption {\n  padding: 0.7em;\n  color: #fff;\n  text-transform: uppercase;\n  font-size: 1.25em;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.grid figure figcaption::before,\n.grid figure figcaption::after {\n  pointer-events: none;\n}\n\n.grid figure figcaption,\n.grid figure figcaption > a {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n}\n\n/* Anchor will cover the whole item by default */\n/* For some effects it will show as a button */\n.grid figure figcaption > a {\n  z-index: 1000;\n  text-indent: 200%;\n  white-space: nowrap;\n  font-size: 0;\n  opacity: 0;\n}\n\n.grid figure h4 {\n  word-spacing: -0.15em;\n  font-weight: 300;\n}\n\n.grid figure h4 span {\n  font-weight: 600;\n  margin-left: 7px;\n}\n\n.grid figure h4,\n.grid figure p {\n  margin: 0;\n}\n\n.grid figure p {\n  letter-spacing: 1px;\n  font-size: 57%;\n}\n\n/* Individual effects */\n\nfigure.effect-julia {\n  background: #2f3238;\n}\n\nfigure.effect-julia img {\n  max-width: none;\n  transition:opacity 1s, -webkit-transform 1s;\n  transition:opacity 1s, transform 1s;\n  transition: opacity 1s, transform 1s, -webkit-transform 1s;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n  width: 100%;\n}\n\nfigure.effect-julia figcaption {\n  text-align: left;\n}\n\nfigure.effect-julia h4 {\n  position: relative;\n  padding: 0.5em 0;\n  font-weight:400;\n  font-size: 1.25em;\n  letter-spacing: 2px;\n}\nfigure.effect-julia span{\n  color:#f16930;\n}\n\nfigure.effect-julia p {\n  display: inline-block;\n  float:top;\n  margin: 0.1em 0.1em 0.4em;\n  padding: 0.5em 1em;\n  background: rgba(35, 33, 32, 0.73);\n  color: #fff;\n  text-transform: none;\n  font-weight: 200;\n  font-size: 0.5em;\n  transition:opacity 0.35s, -webkit-transform 0.35s;\n  transition:opacity 0.35s, transform 0.35s;\n  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;\n  -webkit-transform: translate3d(-360px,0,0);\n  transform: translate3d(-360px,0,0);\n}\n\nfigure.effect-julia p:first-child {\n  transition-delay: 0.15s;\n}\n\nfigure.effect-julia p:nth-of-type(2) {\n  transition-delay: 0.1s;\n}\n\nfigure.effect-julia p:nth-of-type(3) {\n  transition-delay: 0.05s;\n}\n\nfigure.effect-julia:hover p:first-child {\n  transition-delay: 0s;\n}\n\nfigure.effect-julia:hover p:nth-of-type(2) {\n  transition-delay: 0.05s;\n}\n\nfigure.effect-julia:hover p:nth-of-type(3) {\n  transition-delay: 0.1s;\n}\n\nfigure.effect-julia:hover img {\n  -webkit-transform: scale3d(1.1,1.1,1);\n  transform: scale3d(1.1,1.1,1);\n}\n\nfigure.effect-julia:hover p {\n  opacity: 1;\n  -webkit-transform: translate3d(0,0,0);\n  transform: translate3d(0,0,0);\n}\np.ser-para-wthree {\n   padding: 7em 1.2em 1.2em 1.2em;\n   font-size: 85%;\n   background-color: #fff;\n   line-height: 1.35em;\n   color:#777;\n   border-bottom:4px solid #f16930;\n }\n\np.ser-para-wthree#execName {\n  padding: 0.5em 0;\n  font-weight:400;\n  letter-spacing: 2px;\n}\n\np.ser-para-wthree#execName#lastName {\n  color:#f16930;\n}\n\n\n@media(min-width:768px) {\n  p.ser-para-wthree {\n    font-size: 1em;\n  }\n}\n\n\n", ""]);
+exports.push([module.i, ".execs{\n  background-color:rgba(0, 0, 0, 0.6);\n}\n\n.section-title{\n  color:white;\n}\n\n#services {\n  padding: 0 1.2em 0.8em 0.8em ;\n  max-height: 450px;\n  width: 100%;\n}\n.grid {\n  height: 100%;\n  width: 100%;\n  padding: 0 10px;\n  position: relative;\n  clear: both;\n  margin: 0 auto;\n  list-style: none;\n  text-align: center;\n  overflow-y: hidden;\n  overflow-x: scroll;\n  white-space:nowrap;\n}\n.serve-agileinfo {\n  display: inline-block;\n  min-width: 160px;\n  max-width: 275px;\n  width: 30%;\n  margin-right:2%;\n}\n.serve-agileinfo.two {\n  margin-top: 2%;\n}\n\n.serve-agileinfo .exec_portfolio{\n  display: inline-block !important;\n  white-space: normal;\n}\n\n/* Common style */\n.grid figure {\n  position: relative;\n  float: left;\n  overflow: hidden;\n  margin: 7px 1% 10px 1%;\n  height: auto;\n  background: #323232;\n  text-align: center;\n  cursor: pointer;\n}\n\n.grid figure img {\n  position: relative;\n  display: block;\n  max-width: 100%;\n}\n\n.grid figure figcaption {\n  padding: 0.7em;\n  color: #fff;\n  text-transform: uppercase;\n  font-size: 1.25em;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.grid figure figcaption::before,\n.grid figure figcaption::after {\n  pointer-events: none;\n}\n\n.grid figure figcaption,\n.grid figure figcaption > a {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n}\n\n/* Anchor will cover the whole item by default */\n/* For some effects it will show as a button */\n.grid figure figcaption > a {\n  z-index: 1000;\n  text-indent: 200%;\n  white-space: nowrap;\n  font-size: 0;\n  opacity: 0;\n}\n\n.grid figure h4 {\n  word-spacing: -0.15em;\n  font-weight: 300;\n}\n\n.grid figure h4 span {\n  font-weight: 600;\n  margin-left: 7px;\n}\n\n.grid figure h4,\n.grid figure p {\n  margin: 0;\n}\n\n.grid figure p {\n  letter-spacing: 1px;\n  font-size: 57%;\n}\n\n/* Individual effects */\n\nfigure.effect-julia {\n  background: #2f3238;\n}\n\nfigure.effect-julia img {\n  max-width: none;\n  transition:opacity 1s, -webkit-transform 1s;\n  transition:opacity 1s, transform 1s;\n  transition: opacity 1s, transform 1s, -webkit-transform 1s;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n  width: 100%;\n}\n\nfigure.effect-julia figcaption {\n  text-align: left;\n}\n\nfigure.effect-julia h4 {\n  position: relative;\n  padding: 0.5em 0;\n  font-weight:400;\n  font-size: 1.25em;\n  letter-spacing: 2px;\n}\nfigure.effect-julia span{\n  color:#f16930;\n}\n\nfigure.effect-julia p {\n  display: inline-block;\n  float:top;\n  margin: 0.1em 0.1em 0.4em;\n  padding: 0.5em 1em;\n  background: rgba(35, 33, 32, 0.73);\n  color: #fff;\n  text-transform: none;\n  font-weight: 200;\n  font-size: 0.5em;\n  transition:opacity 0.35s, -webkit-transform 0.35s;\n  transition:opacity 0.35s, transform 0.35s;\n  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;\n  -webkit-transform: translate3d(-360px,0,0);\n  transform: translate3d(-360px,0,0);\n}\n\nfigure.effect-julia p{\n  transition-delay: 0.15s;\n  padding: 0.5em;\n  margin: 0.5em;\n\n}\n\n\nfigure.effect-julia:hover p:first-child {\n  transition-delay: 0s;\n}\n\nfigure.effect-julia:hover img {\n  -webkit-transform: scale3d(1.1,1.1,1);\n  transform: scale3d(1.1,1.1,1);\n}\n\nfigure.effect-julia:hover p {\n  opacity: 1;\n  -webkit-transform: translate3d(0,0,0);\n  transform: translate3d(0,0,0);\n}\np.ser-para-wthree {\n   padding: 7em 1.2em 1.2em 1.2em;\n   font-size: 85%;\n   background-color: #fff;\n   line-height: 1.35em;\n   color:#777;\n   border-bottom:4px solid #f16930;\n }\n\np.ser-para-wthree#execName {\n  padding: 0.5em 0;\n  font-weight:400;\n  letter-spacing: 2px;\n}\n\np.ser-para-wthree#execName#lastName {\n  color:#f16930;\n}\n\n\n@media(min-width:768px) {\n  p.ser-para-wthree {\n    font-size: 1em;\n  }\n}\n\n\n", ""]);
 
 // exports
 
@@ -570,7 +576,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/execs/execs.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"execs\">\n  <div class=\"col-lg-12 text-center\">\n    <h2 class=\"section-title\">Execs</h2>\n  </div>\n  <div class=\"services\" id=\"services\">\n      <div class=\"grid\">\n        <div class=\"serve-agileinfo\" *ngFor=\"let exec of allExecs\">\n          <div class=\"exec_portfolio\">\n          <figure class=\"effect-julia\">\n            <img src=\"../../assets/img/execs/{{exec.imgUrl}}\" alt=\"../../assets/img/execs/alt.jpg\"/>\n            <figcaption>\n              <div>\n                <p> First Fact </p> <br>\n                <p> Second Fact </p> <br>\n                <p> Third Fact </p>\n              </div>\n              <!--<a class=\"scroll\" href=\"#news\">View more</a>-->\n            </figcaption>\n          </figure>\n          <p class=\"ser-para-wthree\">\n            <span style=\"font-weight: bolder; font-size: larger\"> {{exec.Name }}<span style=\"color: #f16930;\"> {{exec.LastName}}</span></span>\n            <br>\n            {{ exec.Position }}\n            <br>\n            {{ exec.Major }} - {{ exec.Year }}\n          <p>\n          </div>\n        </div>\n        <!--<div class=\"clearfix\"></div>-->\n      </div>\n  </div>\n</section>\n"
+module.exports = "<section class=\"execs\">\n  <div class=\"col-lg-12 text-center\">\n    <h2 class=\"section-title\">Execs</h2>\n  </div>\n  <div class=\"services\" id=\"services\">\n      <div class=\"grid\">\n        <div class=\"serve-agileinfo\" *ngFor=\"let exec of allExecs\">\n          <div class=\"exec_portfolio\">\n          <figure class=\"effect-julia\">\n            <img src=\"../../assets/img/execs/{{exec.imgUrl}}\" alt=\"../../assets/img/execs/alt.jpg\"/>\n            <figcaption>\n                <p> {{exec.Description}} </p>\n              <!--<a class=\"scroll\" href=\"#news\">View more</a>-->\n            </figcaption>\n          </figure>\n          <p class=\"ser-para-wthree\">\n            <span style=\"font-weight: bolder; font-size: larger\"> {{exec.Name }}<span style=\"color: #f16930;\"> {{exec.LastName}}</span></span>\n            <br>\n            {{ exec.Position }}\n            <br>\n            {{ exec.Major }} - {{ exec.Year }}\n          <p>\n          </div>\n        </div>\n        <!--<div class=\"clearfix\"></div>-->\n      </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -930,6 +936,140 @@ NewsBannerComponent = __decorate([
 
 var _a, _b;
 //# sourceMappingURL=news-banner.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/photos/photos.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/photos/photos.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  photos works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/photos/photos.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhotosComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PhotosComponent = (function () {
+    function PhotosComponent() {
+    }
+    PhotosComponent.prototype.ngOnInit = function () {
+    };
+    return PhotosComponent;
+}());
+PhotosComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'app-photos',
+        template: __webpack_require__("../../../../../src/app/photos/photos.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/photos/photos.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], PhotosComponent);
+
+//# sourceMappingURL=photos.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/photos/photos.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhotosService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PhotosService = (function () {
+    function PhotosService(http) {
+        this.http = http;
+    }
+    PhotosService.prototype.getAllAlbums = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get('/facebook/album')
+                .map(function (res) { return res.json(); })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    PhotosService.prototype.getAllTeams = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get('/execs/teams')
+                .map(function (res) { return res.json(); })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    PhotosService.prototype.getExecByID = function (id) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get('/execs/' + id)
+                .map(function (res) { return res.json(); })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    return PhotosService;
+}());
+PhotosService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], PhotosService);
+
+var _a;
+//# sourceMappingURL=photos.service.js.map
 
 /***/ }),
 

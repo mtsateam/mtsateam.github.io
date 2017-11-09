@@ -156,34 +156,18 @@ figure.effect-julia p {
   transform: translate3d(-360px,0,0);
 }
 
-figure.effect-julia p:first-child {
+figure.effect-julia p{
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
+  padding: 0.5em;
+  margin: 0.5em;
+
 }
 
-figure.effect-julia p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.effect-julia p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
 
 figure.effect-julia:hover p:first-child {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-}
-
-figure.effect-julia:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
 }
 
 figure.effect-julia:hover img {

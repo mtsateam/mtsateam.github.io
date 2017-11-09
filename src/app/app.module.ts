@@ -24,6 +24,9 @@ import { ExecsComponent } from './execs/execs.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { PhotosComponent } from './photos/photos.component';
+import { NewsBannerComponent } from './news-banner/news-banner.component';
+
 
 
 
@@ -33,7 +36,7 @@ import { AboutUsService } from './about-us/about-us.service';
 import { EventsService } from './events/events.service';
 import { SponsorsService } from './sponsors/sponsors.service';
 import { WelcomePageService } from './welcome-page/welcome-page.service';
-import { NewsBannerComponent } from './news-banner/news-banner.component';
+import { PhotosService } from './photos/photos.service';
 
 
 //to prevent error 404
@@ -65,6 +68,7 @@ import { CONST_ROUTING } from './app.routing';
     ContactUsComponent,
     FooterComponent,
     NewsBannerComponent,
+    PhotosComponent,
   ],
   providers: [
     ExecsService,
@@ -72,7 +76,7 @@ import { CONST_ROUTING } from './app.routing';
     EventsService,
     SponsorsService,
     WelcomePageService,
-
+    PhotosService,
     {
       provide: LocationStrategy, useClass: HashLocationStrategy,
     }

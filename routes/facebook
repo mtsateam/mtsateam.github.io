@@ -4,11 +4,57 @@ var FB = require('fb');
 var access_token = 'EAACEdEose0cBABXYJ8BWMY2blNJGQTQ14ZCHZCYTqechUBnZAQQ8qn96GqDzg7EqdguOf7ZAjWQAtJoxtZAPZCvkdqviKLcBn576iqh92EJ9CHSljMWXCzjTWk21ZC2w82Cn2lIZA4ACmhRBUKrrHaIbgtjIbB2VNc5eAvJgZBsdueiGaJcl68yrzHaZCQzmuki47id53Ds9nmeQZDZD';
 
 FB.setAccessToken(access_token);
-
-
+var PAGE_ID = '784055668322802'
 
 router.get('/', function(req, res, next){
-  FB.api("/784055668322802/albums", function (response) {
+  // FB.api("/", function (response) {
+  //   if(response.error && response.error.code == "190"){
+  //     res.send("error handling ok");
+  //   }
+  //   else res.send(response);
+  //
+  // })
+
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'connected') {
+      var accessToken = response.authResponse.accessToken;
+    }
+
+  } );
+});
+
+router.get('/album', function(req, res, next){
+  // FB.getLoginStatus(function(response) {
+  //   if (response.status === 'connected') {
+  //     res.send(response.authResponse.accessToken);
+  //   }else{
+  //     res.send("not connected");
+  //   }
+  // });
+  FB.api("/" + PAGE_ID, function (response) {
+      res.send(response);
+    }
+  );
+});
+
+router.get('/albums/:id', function(req, res, next){
+  var album_id = req.params.id;
+  FB.api("/" + album_id + "/photos", function (response) {
+      res.send(response);
+    }
+  );
+});
+
+router.get('/photos/:id', function(req, res, next){
+  var photo_id = req.params.id;
+  FB.api("/"+photo_id +"?fields=images", function (response) {
+      res.send(response);
+    }
+  );
+});
+
+router.get('/events', function(req, res, next){
+  FB.api("/" + PAGE_ID + "/events", function (response) {
       res.send(response);
     }
   );
