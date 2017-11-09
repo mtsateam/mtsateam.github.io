@@ -8,9 +8,9 @@
 
   <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item active"  *ngFor="let event of upcomingEvents">
+        <div class="item"  *ngFor="let event of upcomingEvents">
           <a href="{{event.EventURL}}" >
-            <img src="../../assets/img/events/{{event.Name}}.jpg" alt="Chania">
+            <img src="{{event.imgURL}}" alt="Chania">
             <div class="carousel-caption">
               <!--<h3>{{event.Name}}</h3>-->
               <!--<p>When: {{event.StartDate}} - {{event.StartTime}} TO {{event.EndDate}} - {{event.EndTime}}</p>-->
@@ -18,13 +18,11 @@
             </div>
           </a>
         </div>
-          <div class="item" *ngFor="let sponsor of sponsorOfTheWeek">
+          <div class="item active" *ngFor="let sponsor of sponsorOfTheWeek">
             <a href="{{sponsor.URL}}" >
-              <img src="../../assets/img/sponsors/{{sponsor.Name}}.jpg" alt="Chania">
+              <img src="{{sponsor.thumbnailUrl}}" alt="Chania">
               <div class="carousel-caption">
-                <h3>{{sponsor.Name}}</h3>
                 <p>Get a {{sponsor.DiscountType}} with the MTSA card</p>
-                <p>{{sponsor.Address}}</p>
               </div>
             </a>
           </div>
