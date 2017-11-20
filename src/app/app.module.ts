@@ -26,6 +26,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhotosComponent } from './photos/photos.component';
 import { NewsBannerComponent } from './news-banner/news-banner.component';
+import { FrameComponent } from './frame/frame.component';
+
 
 
 
@@ -69,6 +71,7 @@ import { CONST_ROUTING } from './app.routing';
     FooterComponent,
     NewsBannerComponent,
     PhotosComponent,
+    FrameComponent,
   ],
   providers: [
     ExecsService,

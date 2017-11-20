@@ -16,14 +16,6 @@ export class MenuComponent implements AfterViewInit {
   constructor(private elementRef:ElementRef) { }
 
   ngAfterViewInit() {
-
-    // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/theme.js");
-    // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/validate.js");
-    // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/bootstrap.min.js");
-    // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/jquery.easing.min.js");
-    // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/jquery.js");
-
-
   }
 
   createTagHTML(elementRef, tag, type, src){

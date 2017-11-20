@@ -112,7 +112,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "app-photos{\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n}\n", ""]);
 
 // exports
 
@@ -125,7 +125,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<!--<app-events id=\"events\"></app-events>-->\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
+module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<!--<app-events id=\"events\"></app-events>-->\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<app-photos id=\"photos\"></app-photos>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
 
 /***/ }),
 
@@ -180,14 +180,15 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__photos_photos_component__ = __webpack_require__("../../../../../src/app/photos/photos.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__news_banner_news_banner_component__ = __webpack_require__("../../../../../src/app/news-banner/news-banner.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__execs_execs_service__ = __webpack_require__("../../../../../src/app/execs/execs.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__about_us_about_us_service__ = __webpack_require__("../../../../../src/app/about-us/about-us.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__events_events_service__ = __webpack_require__("../../../../../src/app/events/events.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__sponsors_sponsors_service__ = __webpack_require__("../../../../../src/app/sponsors/sponsors.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__welcome_page_welcome_page_service__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__photos_photos_service__ = __webpack_require__("../../../../../src/app/photos/photos.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__frame_frame_component__ = __webpack_require__("../../../../../src/app/frame/frame.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__execs_execs_service__ = __webpack_require__("../../../../../src/app/execs/execs.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__about_us_about_us_service__ = __webpack_require__("../../../../../src/app/about-us/about-us.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__events_events_service__ = __webpack_require__("../../../../../src/app/events/events.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__sponsors_sponsors_service__ = __webpack_require__("../../../../../src/app/sponsors/sponsors.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__welcome_page_welcome_page_service__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__photos_photos_service__ = __webpack_require__("../../../../../src/app/photos/photos.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -208,6 +209,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 // import { WelcomePageModule } from './welcome-page/welcome-page.module';
 // import { ExecsModule } from './execs/execs.module';
 //components
+
 
 
 
@@ -239,7 +241,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_23__app_routing__["a" /* CONST_ROUTING */],
+            __WEBPACK_IMPORTED_MODULE_24__app_routing__["a" /* CONST_ROUTING */],
             __WEBPACK_IMPORTED_MODULE_5__ngui_map__["a" /* NguiMapModule */].forRoot({
                 apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM' +
                     '&libraries=visualization,places,drawing'
@@ -257,16 +259,17 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_13__footer_footer_component__["a" /* FooterComponent */],
             __WEBPACK_IMPORTED_MODULE_15__news_banner_news_banner_component__["a" /* NewsBannerComponent */],
             __WEBPACK_IMPORTED_MODULE_14__photos_photos_component__["a" /* PhotosComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__frame_frame_component__["a" /* FrameComponent */],
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_16__execs_execs_service__["a" /* ExecsService */],
-            __WEBPACK_IMPORTED_MODULE_17__about_us_about_us_service__["a" /* AboutUsService */],
-            __WEBPACK_IMPORTED_MODULE_18__events_events_service__["a" /* EventsService */],
-            __WEBPACK_IMPORTED_MODULE_19__sponsors_sponsors_service__["a" /* SponsorsService */],
-            __WEBPACK_IMPORTED_MODULE_20__welcome_page_welcome_page_service__["a" /* WelcomePageService */],
-            __WEBPACK_IMPORTED_MODULE_21__photos_photos_service__["a" /* PhotosService */],
+            __WEBPACK_IMPORTED_MODULE_17__execs_execs_service__["a" /* ExecsService */],
+            __WEBPACK_IMPORTED_MODULE_18__about_us_about_us_service__["a" /* AboutUsService */],
+            __WEBPACK_IMPORTED_MODULE_19__events_events_service__["a" /* EventsService */],
+            __WEBPACK_IMPORTED_MODULE_20__sponsors_sponsors_service__["a" /* SponsorsService */],
+            __WEBPACK_IMPORTED_MODULE_21__welcome_page_welcome_page_service__["a" /* WelcomePageService */],
+            __WEBPACK_IMPORTED_MODULE_22__photos_photos_service__["a" /* PhotosService */],
             {
-                provide: __WEBPACK_IMPORTED_MODULE_22__angular_common__["a" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_22__angular_common__["b" /* HashLocationStrategy */],
+                provide: __WEBPACK_IMPORTED_MODULE_23__angular_common__["a" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_23__angular_common__["b" /* HashLocationStrategy */],
             }
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]],
@@ -576,7 +579,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/execs/execs.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"execs\">\n  <div class=\"col-lg-12 text-center\">\n    <h2 class=\"section-title\">Execs</h2>\n  </div>\n  <div class=\"services\" id=\"services\">\n      <div class=\"grid\">\n        <div class=\"serve-agileinfo\" *ngFor=\"let exec of allExecs\">\n          <div class=\"exec_portfolio\">\n          <figure class=\"effect-julia\">\n            <img src=\"../../assets/img/execs/{{exec.imgUrl}}\" alt=\"../../assets/img/execs/alt.jpg\"/>\n            <figcaption>\n                <p> {{exec.Description}} </p>\n              <!--<a class=\"scroll\" href=\"#news\">View more</a>-->\n            </figcaption>\n          </figure>\n          <p class=\"ser-para-wthree\">\n            <span style=\"font-weight: bolder; font-size: larger\"> {{exec.Name }}<span style=\"color: #f16930;\"> {{exec.LastName}}</span></span>\n            <br>\n            {{ exec.Position }}\n            <br>\n            {{ exec.Major }} - {{ exec.Year }}\n          <p>\n          </div>\n        </div>\n        <!--<div class=\"clearfix\"></div>-->\n      </div>\n  </div>\n</section>\n"
+module.exports = "<section class=\"execs\">\n  <!--<div style=\"background: rgba(0, 0, 0, 0.6)\">-->\n    <div class=\"col-lg-12 text-center\">\n      <h2 class=\"section-title\">Execs</h2>\n    </div>\n    <div class=\"services\" id=\"services\">\n        <div class=\"grid\">\n          <div class=\"serve-agileinfo\" *ngFor=\"let exec of allExecs\">\n            <div class=\"exec_portfolio\">\n            <figure class=\"effect-julia\">\n              <img src=\"../../assets/img/execs/{{exec.imgUrl}}\" alt=\"../../assets/img/execs/alt.jpg\"/>\n              <figcaption>\n                  <p> {{exec.Description}} </p>\n                <!--<a class=\"scroll\" href=\"#news\">View more</a>-->\n              </figcaption>\n            </figure>\n            <p class=\"ser-para-wthree\">\n              <span style=\"font-weight: bolder; font-size: larger\"> {{exec.Name }}<span style=\"color: #f16930;\"> {{exec.LastName}}</span></span>\n              <br>\n              {{ exec.Position }}\n              <br>\n              {{ exec.Major }} - {{ exec.Year }}\n            <p>\n            </div>\n          </div>\n          <!--<div class=\"clearfix\"></div>-->\n        </div>\n    </div>\n  <!--</div>-->\n</section>\n"
 
 /***/ }),
 
@@ -783,6 +786,67 @@ FooterComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/frame/frame.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".tz-gallery {\n  padding: 40px;\n}\n\n.tz-gallery .thumbnail {\n  padding: 0;\n  margin-bottom: 30px;\n  background-color: #fff;\n  border-radius: 4px;\n  border: none;\n  transition: 0.15s ease-in-out;\n  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);\n  max-width: 250px\n}\n\n.tz-gallery .thumbnail:hover {\n  -webkit-transform: translateY(-5px) scale(1.01);\n          transform: translateY(-5px) scale(1.01);\n}\n\n.tz-gallery img {\n  border-radius: 4px 4px 0 0;\n}\n\n.tz-gallery .caption{\n  padding: 26px 30px;\n  text-align: center;\n}\n\n.tz-gallery .caption h3 {\n  font-size: 1em;\n  font-weight: bold;\n  margin-top: 0;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/frame/frame.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"tz-gallery row\">\n  <div class=\"col-sm-6 col-md-4\">\n    <div class=\"thumbnail\">\n      <a href=\"https://www.facebook.com/pg/mcgill.mtsa/photos/?tab=album&album_id=1665432113518482\">\n        <img src=\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/23509428_1665432923518401_8772719503565365102_o.jpg?oh=e8bc0c150f7965a59a550f1f50a2283b&oe=5A8F948E\" alt=\"Bridge\">\n      </a>\n      <div class=\"caption\">\n        <h3>Let's get riggity riggity rekt!</h3>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/frame/frame.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FrameComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FrameComponent = (function () {
+    function FrameComponent() {
+    }
+    FrameComponent.prototype.ngOnInit = function () {
+    };
+    return FrameComponent;
+}());
+FrameComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
+        selector: 'app-frame',
+        template: __webpack_require__("../../../../../src/app/frame/frame.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/frame/frame.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], FrameComponent);
+
+//# sourceMappingURL=frame.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/menu.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -804,7 +868,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/menu.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-custom navbar-fixed-top\" role=\"navigation\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">\n        <i class=\"fa fa-bars\"></i>\n      </button>\n      <a class=\"navbar-brand page-scroll\" href=\"\">\n        #mtsalovesyou </a>\n    </div>\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse navbar-right navbar-main-collapse\">\n      <ul class=\"nav navbar-nav\">\n        <li>\n          <a href=\"#about-us\" class=\"page-scroll\">About Us</a>\n        </li>\n        <li>\n          <a href=\"#news-banner\" class=\"page-scroll\">What's new</a>\n        </li>\n        <li>\n          <a href=\"#events\" class=\"page-scroll\">Events</a>\n        </li>\n        <li>\n          <a href=\"#execs\" class=\"page-scroll\">Team</a>\n        </li>\n        <li>\n          <a href=\"#sponsors\" class=\"page-scroll\">Sponsors</a>\n        </li>\n        <li>\n          <a href=\"#contact-us\" class=\"page-scroll\">Contact Us</a>\n        </li>\n      </ul>\n    </div>\n    <!-- /.navbar-collapse -->\n  </div>\n  <!-- /.container -->\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-custom navbar-fixed-top\" role=\"navigation\">\n  <div class=\"container\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-main-collapse\">\n        <i class=\"fa fa-bars\"></i>\n      </button>\n      <a class=\"navbar-brand page-scroll\" href=\"\">\n        #mtsalovesyou </a>\n    </div>\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse navbar-right navbar-main-collapse\">\n      <ul class=\"nav navbar-nav\">\n        <li>\n          <a href=\"#about-us\" class=\"page-scroll\">About Us</a>\n        </li>\n        <li>\n          <a href=\"#news-banner\" class=\"page-scroll\">What's new</a>\n        </li>\n        <li>\n          <a href=\"#events\" class=\"page-scroll\">Events</a>\n        </li>\n        <li>\n          <a href=\"#photos\" class=\"page-scroll\">Photos</a>\n        </li>\n        <li>\n          <a href=\"#execs\" class=\"page-scroll\">Team</a>\n        </li>\n        <li>\n          <a href=\"#sponsors\" class=\"page-scroll\">Sponsors</a>\n        </li>\n        <li>\n          <a href=\"#contact-us\" class=\"page-scroll\">Contact Us</a>\n        </li>\n      </ul>\n    </div>\n    <!-- /.navbar-collapse -->\n  </div>\n  <!-- /.container -->\n</nav>\n"
 
 /***/ }),
 
@@ -829,11 +893,6 @@ var MenuComponent = (function () {
         this.elementRef = elementRef;
     }
     MenuComponent.prototype.ngAfterViewInit = function () {
-        // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/theme.js");
-        // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/validate.js");
-        // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/bootstrap.min.js");
-        // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/jquery.easing.min.js");
-        // this.createTagHTML(this.elementRef, "script", "text/javascript", "../js/jquery.js");
     };
     MenuComponent.prototype.createTagHTML = function (elementRef, tag, type, src) {
         var s = document.createElement(tag);
@@ -947,7 +1006,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".photos{\n  width:100%;\n  min-height: -webkit-max-content;\n  min-height: -moz-max-content;\n  min-height: max-content;\n  background-image: url(\"https://www.mytaiwantour.com/blog/wp-content/uploads/2017/09/mytaiwantour_blog_Taipei-Rest-and-Relaxation-Tour-1024x445.jpg\");\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n}\n\n.frame{\n  margin-left:auto;\n  margin-right:auto;\n}\n\n.section-title{\n  color:white;\n}\n\n.tz-gallery {\n  padding: 2em;\n  display:inline-block;\n  position: relative;\n}\n\n.tz-gallery .thumbnail {\n  padding: 0;\n  margin-bottom: 30px;\n  background-color: #fff;\n  border-radius: 4px;\n  border: none;\n  transition: 0.15s ease-in-out;\n  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);\n  max-width: 250px;\n  width: -webkit-max-content;\n  width: -moz-max-content;\n  width: max-content;\n}\n\n.tz-gallery .thumbnail:hover {\n  -webkit-transform: translateY(-5px) scale(1.01);\n          transform: translateY(-5px) scale(1.01);\n}\n\n.tz-gallery img {\n  border-radius: 4px 4px 0 0;\n}\n\n.tz-gallery .caption{\n  padding: 26px 30px;\n  text-align: center;\n}\n\n.tz-gallery .caption h3 {\n  font-size: 1em;\n  font-weight: bold;\n  margin-top: 0;\n}\n", ""]);
 
 // exports
 
@@ -960,7 +1019,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/photos/photos.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  photos works!\n</p>\n"
+module.exports = "<section class=\"photos\">\n  <div style=\"background:rgba(0, 0, 0, 0.6); overflow: hidden\">\n    <div class=\"col-lg-12 text-center\">\n      <h2 class=\"section-title\">Photos</h2>\n    </div>\n\n    <div class=\"frames\">\n      <div class=\"tz-gallery row\">\n        <div class=\"col-sm-6 col-md-4\">\n          <div class=\"thumbnail\">\n            <a href=\"https://www.facebook.com/pg/mcgill.mtsa/photos/?tab=album&album_id=1665432113518482\">\n              <img src=\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/23334252_1665433896851637_2232694688937943630_o.jpg?oh=1ea8e8e6fe17affe1b0efed604b33a7e&oe=5AAB4C4D\">\n            </a>\n            <div class=\"caption\">\n              <h3>Let's get riggity riggity rekt!</h3>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"tz-gallery row\">\n        <div class=\"col-sm-6 col-md-4\">\n          <div class=\"thumbnail\">\n            <a href=\"https://www.facebook.com/pg/mcgill.mtsa/photos/?tab=album&album_id=1658676307527396\">\n              <img src=\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/23213312_1658679634193730_491017120653238401_o.jpg?oh=19e2f81ce46c67291fb78e367245e67e&oe=5A94722D\">\n            </a>\n            <div class=\"caption\">\n              <h3>2017-2018 Executive Team</h3>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"tz-gallery row\">\n        <div class=\"col-sm-6 col-md-4\">\n          <div class=\"thumbnail\">\n            <a href=\"https://www.facebook.com/pg/mcgill.mtsa/photos/?tab=album&album_id=1631893520205675\">\n              <img src=\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/22137328_1631894033538957_1010735292472937754_o.jpg?oh=b581536afbc38cbfcedd8c7cb9fc68a8&oe=5AA0639F\">\n            </a>\n            <div class=\"caption\">\n              <h3>The Amazing FROSH: Montreal Edition</h3>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"tz-gallery row\">\n        <div class=\"col-sm-6 col-md-4\">\n          <div class=\"thumbnail\">\n            <a href=\"https://www.facebook.com/pg/mcgill.mtsa/photos/?tab=album&album_id=1626509734077387\">\n              <img src=\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/22104764_1626512937410400_8954332118449850948_o.jpg?oh=248301f8111809371a3988bd8cec0916&oe=5AB004E1\">\n            </a>\n            <div class=\"caption\">\n              <h3>Always Open - MTSA Welcome Party</h3>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--<div class=\"tz-gallery row\">-->\n        <!--<div class=\"col-sm-6 col-md-4\">-->\n          <!--<div class=\"thumbnail\">-->\n            <!--<a href=\"https://www.facebook.com/pg/mcgill.mtsa/photos/?tab=album&album_id=1457494194312276\">-->\n              <!--<img src=\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/17546669_1457496010978761_8902835627731181991_o.jpg?oh=8fe831db67cc2cb7d01afdee1e45788d&oe=5AA0D49D\">-->\n            <!--</a>-->\n            <!--<div class=\"caption\">-->\n              <!--<h3>Semi Formal: Be Our Guest</h3>-->\n            <!--</div>-->\n          <!--</div>-->\n        <!--</div>-->\n      <!--</div>-->\n    </div>\n  </div>\n</section>\n\n\n"
 
 /***/ }),
 
