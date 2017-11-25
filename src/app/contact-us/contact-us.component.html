@@ -11,10 +11,11 @@
         </div>
         <form method="post" action="contact.php" id="contactform">
           <div class="form">
-            <input type="text" name="name" placeholder="Your Name *">
-            <input type="text" name="email" placeholder="Your E-mail Address *">
-            <textarea name="comment" rows="7" placeholder="Type your Message *"></textarea>
-            <input type="submit" id="submit" class="clearfix btn" value="Send">
+            <input type="text" name="contact-name" placeholder="Your Name *">
+            <input type="email" name="contact-email" placeholder="Your E-mail Address *">
+            <input type="text" name="contact-subject" placeholder="Subject Line *">
+            <textarea name="contact-text" rows="7" placeholder="Type your Message *"></textarea>
+            <input type="submit" id="submit" class="clearfix btn" value="Send" (click)="validate($event)">
           </div>
         </form>
       </div>

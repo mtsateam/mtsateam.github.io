@@ -39,6 +39,7 @@ import { EventsService } from './events/events.service';
 import { SponsorsService } from './sponsors/sponsors.service';
 import { WelcomePageService } from './welcome-page/welcome-page.service';
 import { PhotosService } from './photos/photos.service';
+import { EmailService } from './email.service';
 
 
 //to prevent error 404
@@ -80,6 +81,7 @@ import { CONST_ROUTING } from './app.routing';
     SponsorsService,
     WelcomePageService,
     PhotosService,
+    EmailService,
     {
       provide: LocationStrategy, useClass: HashLocationStrategy,
     }

@@ -1,5 +1,4 @@
 import { Routes, RouterModule} from '@angular/router';
-import { ModuleWithProviders } from  '@angular/core';
 
 
 import { EventsComponent } from './events/events.component';
