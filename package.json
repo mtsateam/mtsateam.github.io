@@ -45,6 +45,7 @@
     "lodash": "^4.17.4",
     "lodash.isequal": "^4.5.0",
     "morgan": "^1.8.2",
+    "nodemailer": "^4.4.0",
     "promise": "^7.3.0",
     "rxjs": "^5.1.0",
     "serve-favicon": "^2.4.3",
