@@ -6,10 +6,8 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class EmailService {
-  success : number;
 
   constructor(private http: Http) {
-    this.success = 0;
   }
 
   postEmail(data) {
@@ -19,7 +17,6 @@ export class EmailService {
         .subscribe(res => {
           resolve(res);
         }, (err) => {
-          this.success = -1;
         });
     });
   }

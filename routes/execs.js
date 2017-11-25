@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var connection = require('../connection/database')
-var isEqual = require('lodash.isequal');
 
 //Get all execs
 router.get('/', function(req, res, next){
