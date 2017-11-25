@@ -125,7 +125,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<!--<app-events id=\"events\"></app-events>-->\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<app-photos id=\"photos\"></app-photos>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
+module.exports = "<!--<app-menu> </app-menu>-->\n\n<!--<app-welcome-page></app-welcome-page>-->\n\n<!--<app-about-us id=\"about-us\"></app-about-us>-->\n\n<!--<app-news-banner id=\"news-banner\"></app-news-banner>-->\n\n<!--&lt;!&ndash;<app-events id=\"events\"></app-events>&ndash;&gt;-->\n\n<!--<app-sponsors id=\"sponsors\"></app-sponsors>-->\n\n<!--<app-photos id=\"photos\"></app-photos>-->\n\n<!--<app-execs id=\"execs\"></app-execs>-->\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
 
 /***/ }),
 
@@ -187,8 +187,9 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__sponsors_sponsors_service__ = __webpack_require__("../../../../../src/app/sponsors/sponsors.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__welcome_page_welcome_page_service__ = __webpack_require__("../../../../../src/app/welcome-page/welcome-page.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__photos_photos_service__ = __webpack_require__("../../../../../src/app/photos/photos.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__email_service__ = __webpack_require__("../../../../../src/app/email.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -227,6 +228,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 //to prevent error 404
 
 
@@ -241,7 +243,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_24__app_routing__["a" /* CONST_ROUTING */],
+            __WEBPACK_IMPORTED_MODULE_25__app_routing__["a" /* CONST_ROUTING */],
             __WEBPACK_IMPORTED_MODULE_5__ngui_map__["a" /* NguiMapModule */].forRoot({
                 apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM' +
                     '&libraries=visualization,places,drawing'
@@ -268,8 +270,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_20__sponsors_sponsors_service__["a" /* SponsorsService */],
             __WEBPACK_IMPORTED_MODULE_21__welcome_page_welcome_page_service__["a" /* WelcomePageService */],
             __WEBPACK_IMPORTED_MODULE_22__photos_photos_service__["a" /* PhotosService */],
+            __WEBPACK_IMPORTED_MODULE_23__email_service__["a" /* EmailService */],
             {
-                provide: __WEBPACK_IMPORTED_MODULE_23__angular_common__["a" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_23__angular_common__["b" /* HashLocationStrategy */],
+                provide: __WEBPACK_IMPORTED_MODULE_24__angular_common__["a" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_24__angular_common__["b" /* HashLocationStrategy */],
             }
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]],
@@ -320,7 +323,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#contact{\n  padding-top: 15px;\n  background-color: white;\n}\n\n#contactform input,#contactform textarea {\n  border:0px;\n  border-bottom:2px solid #333;\n  width:100%;\n  background-color:transparent;\n  padding:20px 0px;\n  text-transform:uppercase;\n  letter-spacing:2px;\n  margin-bottom:20px;\n}\n#contactform input#submit {\n  width:auto;\n  border:2px solid;\n  padding:10px 20px;\n  display:inline-block;\n}\n#contactform input#submit:hover {\n  background-color:#333;\n  color:#fff;\n  border:2px solid #333;\n}\n#contactform input:focus,#contactform input:active,#contactform textarea:focus,#contactform textarea:active {\n  border-top:0px;\n  border-bottom:2px solid lightseagreen;\n  outline:0;\n  outline: none;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  margin:0 0 35px;\n  text-transform:uppercase;\n  font-family:Montserrat,\"Helvetica Neue\",Helvetica,Arial,sans-serif;\n  font-weight:700;\n  letter-spacing:1px;\n}\n\n.done {\n  display:none;\n}\n.error input,input.error,.error textarea,textarea.error {\n  background-color:#ffffff;\n  border-bottom:2px solid orangered !Important;\n  transition:border linear 0.2s,box-shadow linear 0.2s;\n}\n", ""]);
+exports.push([module.i, "#contact{\n  padding-top: 15px;\n  background-color: white;\n}\n\n#contactform input,#contactform textarea {\n  border:0px;\n  border-bottom:2px solid #333;\n  width:100%;\n  background-color:transparent;\n  padding:20px 0px;\n  text-transform:uppercase;\n  letter-spacing:2px;\n  margin-bottom:20px;\n}\n#contactform input#submit {\n  width:auto;\n  border:2px solid;\n  padding:10px 20px;\n  display:inline-block;\n}\n#contactform input#submit:hover {\n  background-color:#333;\n  color:#fff;\n  border:2px solid #333;\n}\n#contactform input:focus,#contactform input:active,#contactform textarea:focus,#contactform textarea:active {\n  border-top:0px;\n  border-bottom:2px solid lightseagreen;\n  outline:0;\n  outline: none;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  margin:0 0 35px;\n  text-transform:uppercase;\n  font-family:Montserrat,\"Helvetica Neue\",Helvetica,Arial,sans-serif;\n  font-weight:700;\n  letter-spacing:1px;\n}\n\n.done {\n  display: none;\n}\n.error input,input.error,.error textarea,textarea.error {\n  background-color:#ffffff;\n  border-bottom:2px solid orangered !Important;\n  transition:border linear 0.2s,box-shadow linear 0.2s;\n}\n", ""]);
 
 // exports
 
@@ -333,7 +336,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contact-us/contact-us.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"contact\">\n  <div class=\"container content-section\">\n    <div class=\"row\">\n      <div class=\"col-lg-8 col-lg-offset-2\">\n        <h2><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Contact Us</h2>\n        <div class=\"done\">\n          <div class=\"alert alert-success\">\n            <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>\n            Your message has been sent. Thank you!\n          </div>\n        </div>\n        <form method=\"post\" action=\"contact.php\" id=\"contactform\">\n          <div class=\"form\">\n            <input type=\"text\" name=\"name\" placeholder=\"Your Name *\">\n            <input type=\"text\" name=\"email\" placeholder=\"Your E-mail Address *\">\n            <textarea name=\"comment\" rows=\"7\" placeholder=\"Type your Message *\"></textarea>\n            <input type=\"submit\" id=\"submit\" class=\"clearfix btn\" value=\"Send\">\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<section id=\"contact\">\n  <div class=\"container content-section\">\n    <div class=\"row\">\n      <div class=\"col-lg-8 col-lg-offset-2\">\n        <h2><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Contact Us</h2>\n        <div class=\"done\">\n          <div class=\"alert alert-success\">\n            <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>\n            Your message has been sent. Thank you!\n          </div>\n        </div>\n        <form method=\"post\" action=\"contact.php\" id=\"contactform\">\n          <div class=\"form\">\n            <input type=\"text\" name=\"contact-name\" placeholder=\"Your Name *\">\n            <input type=\"email\" name=\"contact-email\" placeholder=\"Your E-mail Address *\">\n            <input type=\"text\" name=\"contact-subject\" placeholder=\"Subject Line *\">\n            <textarea name=\"contact-text\" rows=\"7\" placeholder=\"Type your Message *\"></textarea>\n            <input type=\"submit\" id=\"submit\" class=\"clearfix btn\" value=\"Send\" (click)=\"validate($event)\">\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
@@ -342,6 +345,7 @@ module.exports = "<section id=\"contact\">\n  <div class=\"container content-sec
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__email_service__ = __webpack_require__("../../../../../src/app/email.service.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactUsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -353,10 +357,59 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ContactUsComponent = (function () {
-    function ContactUsComponent() {
+    function ContactUsComponent(emailService) {
+        this.emailService = emailService;
     }
     ContactUsComponent.prototype.ngOnInit = function () {
+    };
+    ContactUsComponent.prototype.validate = function () {
+        var name = document.getElementsByName("contact-name")[0];
+        var email = document.getElementsByName("contact-email")[0];
+        var subject = document.getElementsByName("contact-subject")[0];
+        var text = document.getElementsByName("contact-text")[0];
+        var returnError = false;
+        if (name.value == "") {
+            name.classList.add('error');
+            returnError = true;
+        }
+        else
+            name.classList.remove('error');
+        if (email.validity.valid == false || email.value == "") {
+            email.classList.add('error');
+            returnError = true;
+        }
+        else
+            email.classList.remove('error');
+        if (subject.value == "") {
+            subject.classList.add('error');
+            returnError = true;
+        }
+        else
+            subject.classList.remove('error');
+        if (text.value == "") {
+            text.classList.add('error');
+            returnError = true;
+        }
+        else
+            text.classList.remove('error');
+        if (!returnError) {
+            var data = {
+                "name": name.value,
+                "email": email.value,
+                "subject": subject.value,
+                "text": text.value
+            };
+            this.emailService.postEmail(data).then(function (res) {
+                var elem = document.getElementsByClassName("done")[0];
+                elem.setAttribute("style", "display: inline-block");
+                name.value = "";
+                email.value = "";
+                text.value = "";
+                subject.value = "";
+            });
+        }
     };
     return ContactUsComponent;
 }());
@@ -366,10 +419,59 @@ ContactUsComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/contact-us/contact-us.component.html"),
         styles: [__webpack_require__("../../../../../src/app/contact-us/contact-us.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__email_service__["a" /* EmailService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__email_service__["a" /* EmailService */]) === "function" && _a || Object])
 ], ContactUsComponent);
 
+var _a;
 //# sourceMappingURL=contact-us.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/email.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var EmailService = (function () {
+    function EmailService(http) {
+        this.http = http;
+    }
+    EmailService.prototype.postEmail = function (data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.post('/email', data)
+                .map(function (res) { return res.json(); })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+            });
+        });
+    };
+    return EmailService;
+}());
+EmailService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], EmailService);
+
+var _a;
+//# sourceMappingURL=email.service.js.map
 
 /***/ }),
 
@@ -1153,7 +1255,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/sponsors/sponsors.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<section class=\"sponsors\" id=\"sponsors\">\n  <div class=\"container\">\n    <div class=\"col-lg-12 text-center section-title\">\n      <h2>Sponsors</h2>\n      <hr class=\"star-primary\">\n    </div>\n    <div class=\"map col-lg-12\">\n      <ngui-map\n        zoom=\"13\"\n        center=\"845 Sherbrook West, Canada\">\n        <marker *ngFor=\"let sponsor of allSponsors\"\n                position= {{sponsor.Address}}\n                (click)=\"clicked($event)\"></marker>\n        <info-window id=\"iw\">\n          <div *ngIf=\"marker.display\">\n            lat: {{ marker.lat }}, lng: {{ marker.lng }}\n          </div>\n        </info-window>\n      </ngui-map>\n    </div>\n  </div>\n\n  <a href=\"#sponsorsModal\" class=\"portfolio-link\" data-toggle=\"modal\">\n    <input type=\"button\" id=\"allSponsorBtn\" class=\"clearfix btn\"  value=\"View all sponsors\">\n  </a>\n</section>\n\n<div class=\"portfolio-modal modal fade\" id=\"sponsorsModal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n  <div class=\"modal-content\">\n    <div class=\"close-modal\" data-dismiss=\"modal\">\n      <div class=\"lr\">\n        <div class=\"rl\">\n        </div>\n      </div>\n    </div>\n    <div class=\"container\">\n      <div class=\"sponsors-modal\">\n        <div class=\"col-lg-8 col-lg-offset-2\">\n          <h2>Sponsors 2017-2018</h2>\n          <hr class=\"star-primary\">\n        </div>\n        <table class=\"table discounts wow fadeInRight animated\" data-wow-offset=\"30\" data-wow-duration=\"1.5s\" data-wow-delay=\"0.15s\">\n          <tr *ngFor=\"let sponsor of allSponsors\">\n            <td>{{ sponsor.Name }}</td>\n            <td class=\"hidden-xs\">{{sponsor.Address}}</td>\n            <td>{{sponsor.DiscountType}} </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "\n<section class=\"sponsors\" id=\"sponsors\">\n  <div class=\"container\">\n    <div class=\"col-lg-12 text-center section-title\">\n      <h2>Sponsors</h2>\n      <hr class=\"star-primary\">\n    </div>\n    <div class=\"map col-lg-12\">\n      <ngui-map\n        zoom=\"13\"\n        center=\"845 Sherbrook West, Canada\">\n        <marker *ngFor=\"let sponsor of allSponsors\"\n                position= {{sponsor.Address}}\n                (click)=\"clicked($event)\"></marker>\n        <info-window id=\"iw\">\n          <div *ngIf=\"marker.display\">\n            lat: {{ marker.lat }}, lng: {{ marker.lng }}\n          </div>\n        </info-window>\n      </ngui-map>\n    </div>\n  </div>\n\n  <a routerLink=\"/sponsors\" routerLinkActive=\"active\" class=\"portfolio-link\" data-toggle=\"modal\">\n    <input type=\"button\" id=\"allSponsorBtn\" class=\"clearfix btn\"  value=\"View all sponsors\">\n  </a>\n</section>\n\n<div class=\"portfolio-modal modal fade\" id=\"sponsorsModal\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">\n  <div class=\"modal-content\">\n    <div class=\"close-modal\" data-dismiss=\"modal\">\n      <div class=\"lr\">\n        <div class=\"rl\">\n        </div>\n      </div>\n    </div>\n    <div class=\"container\">\n      <div class=\"sponsors-modal\">\n        <div class=\"col-lg-8 col-lg-offset-2\">\n          <h2>Sponsors 2017-2018</h2>\n          <hr class=\"star-primary\">\n        </div>\n        <table class=\"table discounts wow fadeInRight animated\" data-wow-offset=\"30\" data-wow-duration=\"1.5s\" data-wow-delay=\"0.15s\">\n          <tr *ngFor=\"let sponsor of allSponsors\">\n            <td>{{ sponsor.Name }}</td>\n            <td class=\"hidden-xs\">{{sponsor.Address}}</td>\n            <td>{{sponsor.DiscountType}} </td>\n          </tr>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 

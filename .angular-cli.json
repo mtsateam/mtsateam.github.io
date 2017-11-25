@@ -36,7 +36,6 @@
         "./js/jquery.knob.js",
         "./js/theme.js",
         "./js/wow.min.js",
-        "./js/validate.js",
         "./js/parallax.js"
       ],
       "environmentSource": "environments/environment.ts",

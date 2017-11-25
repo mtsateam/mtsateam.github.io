@@ -11,6 +11,7 @@ var index = require('./routes/index');
 var events = require('./routes/events');
 var sponsors = require('./routes/sponsors');
 var fb = require('./routes/facebook');
+var email = require('./routes/email');
 
 
 
@@ -31,6 +32,7 @@ app.use('/execs', execs);
 app.use('/events', events);
 app.use('/sponsors', sponsors);
 app.use('/facebook', fb);
+app.use('/email', email);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
