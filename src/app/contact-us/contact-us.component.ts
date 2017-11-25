@@ -51,12 +51,12 @@ export class ContactUsComponent implements OnInit {
         "text":text.value
       };
       this.emailService.postEmail(data).then((res) => {
-        if(res.json().email == "error"){
-
-        }else{
-          let elem = <HTMLInputElement>document.getElementsByName("done")[0];
-          elem.setAttribute("style", "display: none !important");
-        }
+        let elem = <HTMLInputElement>document.getElementsByClassName("done")[0];
+        elem.setAttribute("style", "display: inline-block");
+        name.value = "";
+        email.value= "";
+        text.value= "";
+        subject.value="";
      })
     }
 

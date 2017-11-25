@@ -10,8 +10,8 @@ function handleSayHello(req, res) {
   var mailOptions = {
     from: 'mtsaweb13579@gmail.com', // sender address
     to: 'wangtiffany@gmail.com', // list of receivers
-    subject: "From:" + req.body.email + " --- " + req.body.subject, // Subject line
-    text: req.body.text //, // plaintext body
+    subject: "From: " + req.body.name + " --- " + req.body.subject, // Subject line
+    text: req.body.text + "\n\nEmail: " + req.body.email //, // plaintext body
   };
 
   // Not the movie transporter!
@@ -26,10 +26,10 @@ function handleSayHello(req, res) {
   transporter.sendMail(mailOptions, function(error, info){
     if(error){
       console.log(error);
-      res.json({email: "error"});
+      res.json({"email": "error"});
     }else{
       console.log('Message sent: ' + info.response);
-      res.json({email: info.response});
+      res.json({"email": info.response});
 
     };
   });
