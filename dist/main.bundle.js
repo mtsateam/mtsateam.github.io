@@ -125,7 +125,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--<app-menu> </app-menu>-->\n\n<!--<app-welcome-page></app-welcome-page>-->\n\n<!--<app-about-us id=\"about-us\"></app-about-us>-->\n\n<!--<app-news-banner id=\"news-banner\"></app-news-banner>-->\n\n<!--&lt;!&ndash;<app-events id=\"events\"></app-events>&ndash;&gt;-->\n\n<!--<app-sponsors id=\"sponsors\"></app-sponsors>-->\n\n<!--<app-photos id=\"photos\"></app-photos>-->\n\n<!--<app-execs id=\"execs\"></app-execs>-->\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
+module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<!--<app-events id=\"events\"></app-events>-->\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<app-photos id=\"photos\"></app-photos>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
 
 /***/ }),
 
