@@ -35,13 +35,6 @@ module.exports = "// -----------------------------------------------------------
 
 /***/ }),
 
-/***/ "../../../../raw-loader/index.js!../../../../source-map-loader/index.js!../../../../../src/js/parallax.js":
-/***/ (function(module, exports) {
-
-module.exports = "//////CONTACT FORM VALIDATION\n$(document).ready(function ($) {\n  if($(window).scrollTop() >= ($(\"$photos\").height)){\n    $(document).css('background-image', 'https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-0/c12.0.200.200/p200x200/23380171_1665435770184783_6636907424078507810_n.jpg?oh=94db142ffece7a21f8e45539b046c059&oe=5A9BEBB4')\n  }\n});\n$(document).ready(function() {\n  var passed_service = false;\n  var passed_clients = false;\n  $('body,html').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function(event){\n    if($(window).scrollTop() >= ($(\"#service\").height())){\n      if(!passed_service){\n        alert(\"To #service\");\n        passed_service = true;\n      }\n    }\n\n    //console.log($(window).scrollTop());\n    if($(window).scrollTop() >= (parseInt($(\"#service\").height()) + parseInt($(\"#clients\").height()))){\n      if(!passed_clients){\n        alert(\"To #clients\");\n        passed_clients = true;\n      }\n    }\n  });\n});\n"
-
-/***/ }),
-
 /***/ "../../../../raw-loader/index.js!../../../../source-map-loader/index.js!../../../../../src/js/theme.js":
 /***/ (function(module, exports) {
 
@@ -94,13 +87,6 @@ __webpack_require__("../../../../script-loader/addScript.js")(__webpack_require_
 
 /***/ }),
 
-/***/ "../../../../script-loader/index.js!../../../../../src/js/parallax.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__("../../../../script-loader/addScript.js")(__webpack_require__("../../../../raw-loader/index.js!../../../../source-map-loader/index.js!../../../../../src/js/parallax.js"))
-
-/***/ }),
-
 /***/ "../../../../script-loader/index.js!../../../../../src/js/theme.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -138,8 +124,7 @@ __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jq
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jquery.vegas.min.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/jquery.knob.js");
 __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/theme.js");
-__webpack_require__("../../../../script-loader/index.js!../../../../../src/js/wow.min.js");
-module.exports = __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/parallax.js");
+module.exports = __webpack_require__("../../../../script-loader/index.js!../../../../../src/js/wow.min.js");
 
 
 /***/ })

@@ -1,3 +1,26 @@
 app-photos{
   height: max-content;
 }
+
+.break{
+  width: 100%;
+  height: 40%;
+  max-height: 450px;
+  background-image: url("https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/23916752_10155967194433627_2853282811025249800_o.jpg?oh=699662b8205c0e3fb7605697798a973b&oe=5A95C212");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.quote{
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0);
+}
+
+
+@media(min-width:768px){
+  .break{
+    min-height: 380px;
+  }
+}

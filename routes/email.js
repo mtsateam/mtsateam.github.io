@@ -8,10 +8,10 @@ router.post('/', handleSayHello);
 
 function handleSayHello(req, res) {
   var mailOptions = {
-    from: 'mtsaweb13579@gmail.com', // sender address
-    to: 'wangtiffany@gmail.com', // list of receivers
+    from: req.body.email, // sender address
+    to: 'mtsa.team@gmail.com', // list of receivers
     subject: "From: " + req.body.name + " --- " + req.body.subject, // Subject line
-    text: req.body.text + "\n\nEmail: " + req.body.email //, // plaintext body
+    text: req.body.text //, // plaintext body
   };
 
   // Not the movie transporter!

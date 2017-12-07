@@ -112,7 +112,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "app-photos{\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n}\n", ""]);
+exports.push([module.i, "app-photos{\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n}\n\n.break{\n  width: 100%;\n  height: 40%;\n  max-height: 450px;\n  background-image: url(\"https://scontent-yyz1-1.xx.fbcdn.net/v/t31.0-8/23916752_10155967194433627_2853282811025249800_o.jpg?oh=699662b8205c0e3fb7605697798a973b&oe=5A95C212\");\n  background-position: center;\n  background-attachment: fixed;\n  background-size: cover;\n}\n\n.quote{\n  width:100%;\n  height:100%;\n  background-color: rgba(0, 0, 0);\n}\n\n\n@media(min-width:768px){\n  .break{\n    min-height: 380px;\n  }\n}\n", ""]);
 
 // exports
 
@@ -125,7 +125,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<!--<app-events id=\"events\"></app-events>-->\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<app-photos id=\"photos\"></app-photos>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
+module.exports = "<app-menu> </app-menu>\n\n<app-welcome-page></app-welcome-page>\n\n<app-about-us id=\"about-us\"></app-about-us>\n\n<app-news-banner id=\"news-banner\"></app-news-banner>\n\n<!--<app-events id=\"events\"></app-events>-->\n\n<app-sponsors id=\"sponsors\"></app-sponsors>\n\n<section class=\"break\">\n  <div class=\"quote\">\n\n  </div>\n\n</section>\n\n<app-photos id=\"photos\"></app-photos>\n\n<app-execs id=\"execs\"></app-execs>\n\n<app-contact-us id=\"contact-us\"></app-contact-us>\n\n<app-footer></app-footer>\n\n\n\n\n\n"
 
 /***/ }),
 
@@ -336,7 +336,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contact-us/contact-us.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"contact\">\n  <div class=\"container content-section\">\n    <div class=\"row\">\n      <div class=\"col-lg-8 col-lg-offset-2\">\n        <h2><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Contact Us</h2>\n        <div class=\"done\">\n          <div class=\"alert alert-success\">\n            <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>\n            Your message has been sent. Thank you!\n          </div>\n        </div>\n        <form method=\"post\" action=\"contact.php\" id=\"contactform\">\n          <div class=\"form\">\n            <input type=\"text\" name=\"contact-name\" placeholder=\"Your Name *\">\n            <input type=\"email\" name=\"contact-email\" placeholder=\"Your E-mail Address *\">\n            <input type=\"text\" name=\"contact-subject\" placeholder=\"Subject Line *\">\n            <textarea name=\"contact-text\" rows=\"7\" placeholder=\"Type your Message *\"></textarea>\n            <input type=\"submit\" id=\"submit\" class=\"clearfix btn\" value=\"Send\" (click)=\"validate($event)\">\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
+module.exports = "<section id=\"contact\">\n  <div class=\"container content-section\">\n    <div class=\"row\">\n      <div class=\"col-lg-8 col-lg-offset-2\">\n        <h2><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Contact Us</h2>\n        <div class=\"done\">\n          <div class=\"alert alert-success\">\n            <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>\n            Your message has been sent. Thank you!\n          </div>\n        </div>\n        <form method=\"post\" action=\"contact.php\" id=\"contactform\">\n          <div class=\"form\">\n            <input type=\"text\" name=\"contact-name\" placeholder=\"Your Name *\">\n            <input type=\"email\" name=\"contact-email\" placeholder=\"Your E-mail Address *\">\n            <input type=\"text\" name=\"contact-subject\" placeholder=\"Subject Line *\">\n            <textarea name=\"contact-text\" rows=\"7\" placeholder=\"Type your Message *\"></textarea>\n            <input type=\"submit\" id=\"submit\" class=\"clearfix btn\" value=\"Send\" (click)=\"validate()\">\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
 
 /***/ }),
 
